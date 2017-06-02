@@ -1,6 +1,12 @@
 
+#vvvv Version
+vvvv
+
 # .v4p backup files
 *~.xml
+
+#Assets
+Software/Assets
 
 # Dynamic plugins .dll
 bin/
