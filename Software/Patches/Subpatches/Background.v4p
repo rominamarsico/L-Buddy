@@ -1,0 +1,357 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Background.v4p" systemname="Hauptthema" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Hauptthema.v4p">
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1764" top="2208" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Original Width" visible="1">
+   </PIN>
+   <PIN pinname="Original Height" visible="1">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1764" top="1836" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Directory" visible="1" slicecount="1" values="Assets\Unterthemen_Wald\">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Include Subdirectories" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1932" top="1500" width="1752" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1932" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Assets">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Index" slicecount="1" pintype="Input" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Output Node" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Node" left="1752" top="2628" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1764" top="3156" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input 2" slicecount="1" visible="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="1500" top="4152" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="7" systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Enabled" visible="1" slicecount="1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="4068" top="3156" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="1032" top="-1668" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11805" top="3210" width="17145" height="9105">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Blend Mode" pintype="Input" visible="1" slicecount="1" values="| Off|">
+   </PIN>
+   <PIN pinname="Transform" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Transform" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color Transform" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Z" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enable Depth" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="8" systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Index" visible="1" pintype="Input">
+   </PIN>
+   <BOUNDS type="Node" left="4056" top="2628" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="9" systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="4068" top="1836" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filenames" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Directory" visible="1" slicecount="1" pintype="Input" values="Assets\Unterthemen_Wald\">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" pintype="Input" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Include Subdirectories" slicecount="1" pintype="Input" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mask" pintype="Input" visible="1" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="Include Hidden" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Short Filenames" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="File Count" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="10" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="..\Assets\Wald">
+   </PIN>
+   <BOUNDS type="Box" left="4236" top="1500" width="1752" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4236" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="11" systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="4068" top="2208" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Filename" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Original Width" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Original Height" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" pintype="Input" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Load In Background" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Use Preloaded Item" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Type" pintype="Input" visible="-1" slicecount="1" values="Texture">
+   </PIN>
+   <PIN pinname="Format" pintype="Input" visible="-1" slicecount="1" values="|No Specific|">
+   </PIN>
+   <PIN pinname="Mip Map Count" pintype="Input" visible="-1" slicecount="1" values="Automatic">
+   </PIN>
+   <PIN pinname="Repair" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Preload" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Width" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Height" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Depth" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Original Depth" pintype="Output" visible="0">
+   </PIN>
+   <PIN pinname="Original MipMap Count" pintype="Output" visible="0">
+   </PIN>
+   <PIN pinname="Up And Running" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Y Input Value|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="6" dstpinname="Input 2">
+   </LINK>
+   <NODE id="13" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="4752" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="4752" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="13" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="3" dstpinname="Input Node" linkstyle="PolyLine">
+   </LINK>
+   <NODE id="14" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Index">
+   </PIN>
+   <BOUNDS type="Box" left="3120" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3120" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Index" linkstyle="Bezier">
+   <LINKPOINT x="3120" y="1686">
+   </LINKPOINT>
+   <LINKPOINT x="2424" y="1686">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="15" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Output Node|">
+   </PIN>
+   <BOUNDS type="Box" left="2400" top="4752" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2400" top="4752" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="15" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Filenames" dstnodeid="0" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="1" dstpinname="Directory">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="4" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Texture Out" dstnodeid="8" dstpinname="Input Node" linkstyle="PolyLine">
+   </LINK>
+   <NODE id="16" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Index 1|">
+   </PIN>
+   <BOUNDS type="Box" left="4680" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4680" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="7" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="9" dstpinname="Directory">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Filenames" dstnodeid="11" dstpinname="Filename">
+   </LINK>
+   <BOUNDS type="Window" left="2136" top="1188" width="7656" height="6624">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Switch">
+   </LINK>
+   </PATCH>

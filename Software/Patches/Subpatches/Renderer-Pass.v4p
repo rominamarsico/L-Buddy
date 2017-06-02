@@ -1,0 +1,105 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Renderer-Pass.v4p" systemname="Renderer-Pass" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Renderer-Pass.v4p">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0" stayontop="0">
+   <BOUNDS type="Node" left="1260" top="2628" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1260" top="2628" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6864" top="216" width="6216" height="4548">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1260" top="2028" width="3468" height="276">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3048" top="2628" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cursor (DX9)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.49.229-g30fb9f349f\vvvv\nodes\modules\DX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="4116" top="1620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   <PIN pinname="Cursor Type" slicecount="1" values="Pointer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="0" dstpinname="Aspect Ratio">
+   </LINK>
+   <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer 1|">
+   </PIN>
+   <BOUNDS type="Box" left="1260" top="620" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1260" top="620" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="1" dstpinname="Layer 1">
+   </LINK>
+   <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer 2|">
+   </PIN>
+   <BOUNDS type="Box" left="2160" top="620" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2160" top="620" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output Node" dstnodeid="1" dstpinname="Layer 2">
+   </LINK>
+   <NODE id="6" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer 3|">
+   </PIN>
+   <BOUNDS type="Box" left="3060" top="620" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3060" top="620" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="1" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="2" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="2" dstpinname="Aspect Height">
+   </LINK>
+   <BOUNDS type="Window" left="1332" top="1716" width="6468" height="4104">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>
