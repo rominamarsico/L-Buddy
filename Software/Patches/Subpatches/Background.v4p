@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Background.v4p" systemname="Hauptthema" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Hauptthema.v4p">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Background.v4p" systemname="Hauptthema" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Hauptthema.v4p">
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1764" top="2208" width="100" height="100">
    </BOUNDS>
@@ -31,7 +31,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1932" top="1500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Assets">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\Assets\Assets\Background">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -179,9 +179,9 @@
    </PIN>
    </NODE>
    <NODE id="10" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="..\Assets\Wald">
+   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="..\..\Assets\Assets\Space">
    </PIN>
-   <BOUNDS type="Box" left="4236" top="1500" width="1752" height="240">
+   <BOUNDS type="Box" left="4236" top="1500" width="2532" height="264">
    </BOUNDS>
    <BOUNDS type="Node" left="4236" top="1500" width="0" height="0">
    </BOUNDS>
@@ -346,7 +346,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Filenames" dstnodeid="11" dstpinname="Filename">
    </LINK>
-   <BOUNDS type="Window" left="2136" top="1188" width="7656" height="6624">
+   <BOUNDS type="Window" left="6900" top="4740" width="7656" height="6624">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

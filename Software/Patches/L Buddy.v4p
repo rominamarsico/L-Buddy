@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\L Buddy.v4p" systemname="L Buddy" filename="C:\Users\Romina\Documents\Hochschule\6. Semester\_P6\L Buddy.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="0" top="168" width="6864" height="10872">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\L Buddy.v4p" systemname="L Buddy" filename="C:\Users\Romina\Documents\Hochschule\6. Semester\_P6\L Buddy.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="0" top="168" width="6792" height="10872">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -71,7 +71,7 @@
    </PIN>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="2136" top="1188" width="7656" height="6624">
+   <BOUNDS type="Window" left="6900" top="4740" width="7656" height="6624">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -89,7 +89,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="3945" width="8304" height="6076">
    </BOUNDS>
-   <BOUNDS type="Window" left="1308" top="1104" width="8304" height="6852">
+   <BOUNDS type="Window" left="5724" top="4716" width="8304" height="6852">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -101,7 +101,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="4140" width="5572" height="6820">
    </BOUNDS>
-   <BOUNDS type="Window" left="1980" top="1236" width="6120" height="7296">
+   <BOUNDS type="Window" left="2604" top="4008" width="6120" height="7296">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>

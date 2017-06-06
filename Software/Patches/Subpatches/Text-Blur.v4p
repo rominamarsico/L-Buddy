@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Text-Blur.v4p" systemname="Text-Blur" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Text-Blur.v4p">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Text-Blur.v4p" systemname="Text-Blur" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Text-Blur.v4p">
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1260" top="5220" width="100" height="100">
    </BOUNDS>
@@ -77,9 +77,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
-   <BOUNDS type="Node" left="3468" top="2352" width="100" height="100">
+   <BOUNDS type="Node" left="4392" top="2352" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3468" top="2352" width="795" height="960">
+   <BOUNDS type="Box" left="4392" top="2352" width="795" height="960">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
@@ -105,13 +105,13 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
-   <BOUNDS type="Node" left="4296" top="2352" width="100" height="100">
+   <BOUNDS type="Node" left="3492" top="2352" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4296" top="2352" width="795" height="960">
+   <BOUNDS type="Box" left="3492" top="2352" width="795" height="960">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="-1.5,2.54,-3.37,2.13">
+   <PIN pinname="Y Input Value" slicecount="4" values="-2.57,3.26,-1.25,2.14">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -206,12 +206,12 @@
    </NODE>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Switch">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input 2">
-   </LINK>
-   <BOUNDS type="Window" left="1980" top="1236" width="6120" height="7296">
+   <BOUNDS type="Window" left="2604" top="4008" width="6120" height="7296">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input 1">
+   </LINK>
    </PATCH>

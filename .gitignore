@@ -5,8 +5,8 @@ vvvv
 # .v4p backup files
 *~.xml
 
-#Assets
-Software/Assets
+#FatAssets
+Software/Assets/FatAssets
 
 # Dynamic plugins .dll
 bin/
