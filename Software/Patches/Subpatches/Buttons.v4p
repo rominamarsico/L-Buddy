@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Buttons.v4p" systemname="Buttons" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Buttons.v4p">
-   <BOUNDS type="Window" left="9000" top="3288" width="5304" height="7212">
+   <BOUNDS type="Window" left="8280" top="4860" width="5805" height="7710">
    </BOUNDS>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1968" top="4692" width="100" height="100">
+   <BOUNDS type="Node" left="1968" top="5292" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -15,9 +15,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1968" top="5136" width="792" height="240">
+   <BOUNDS type="Box" left="1965" top="6030" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1968" top="5136" width="0" height="0">
+   <BOUNDS type="Node" left="1965" top="6030" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer-Buttons">
    </PIN>
@@ -127,7 +127,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6">
    <BOUNDS type="Node" left="3204" top="2316" width="204" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="3204" top="2316" width="1356" height="1236">
+   <BOUNDS type="Box" left="3204" top="2316" width="1365" height="1440">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|||&cr;&lf;||&cr;&lf;|| Seitenverhältnis &cr;&lf;|| des Buttons&cr;&lf;||&cr;&lf;|||">
    </PIN>
@@ -152,11 +152,15 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Original Width" dstnodeid="9" dstpinname="Input 2">
+   <LINK srcnodeid="2" srcpinname="Original Width" dstnodeid="9" dstpinname="Input 2" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Original Height" dstnodeid="9" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
+   <LINK srcnodeid="10" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform" linkstyle="Bezier">
+   <LINKPOINT x="1575" y="4318">
+   </LINKPOINT>
+   <LINKPOINT x="2145" y="4518">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="624" top="1620" width="100" height="100">
@@ -168,12 +172,16 @@
    <PIN pinname="Y" slicecount="1" visible="1" values="-0.44">
    </PIN>
    </NODE>
-   <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="10" dstpinname="Transform In">
+   <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="10" dstpinname="Transform In" linkstyle="VHV">
+   <LINKPOINT x="660" y="2985">
+   </LINKPOINT>
+   <LINKPOINT x="1560" y="2985">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
-   <BOUNDS type="Box" left="1128" top="1116" width="792" height="240">
+   <BOUNDS type="Box" left="1083" top="1116" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1128" top="1116" width="0" height="0">
+   <BOUNDS type="Node" left="1083" top="1116" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.44">
    </PIN>
@@ -185,9 +193,9 @@
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Y">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
-   <BOUNDS type="Box" left="3168" top="4056" width="480" height="480">
+   <BOUNDS type="Box" left="3120" top="4155" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3168" top="4056" width="0" height="0">
+   <BOUNDS type="Node" left="3120" top="4155" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -199,9 +207,51 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   <PIN pinname="Descriptive Name" slicecount="1" values="ShowTopic">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
+   <NODE id="15" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Interaktion I/O|">
+   </PIN>
+   <BOUNDS type="Box" left="3870" top="4455" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3870" top="4455" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="3105" top="4860" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="3270" top="6030" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3270" top="6030" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Button-Interaktionsfläche">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Transform Out" dstnodeid="17" dstpinname="Input Node" linkstyle="VHV">
+   <LINKPOINT x="1560" y="5805">
+   </LINKPOINT>
+   <LINKPOINT x="3300" y="5805">
+   </LINKPOINT>
    </LINK>
    </PATCH>
