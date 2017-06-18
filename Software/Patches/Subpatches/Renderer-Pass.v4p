@@ -52,16 +52,6 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Cursor (DX9)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.49.229-g30fb9f349f\vvvv\nodes\modules\DX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="5271" top="1560" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Mouse" visible="1">
-   </PIN>
-   <PIN pinname="Cursor Type" slicecount="1" values="Pointer">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="0" dstpinname="Aspect Ratio">
@@ -96,8 +86,6 @@
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="1" dstpinname="Layer 3">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 6">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="2" dstpinname="Aspect Width">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="2" dstpinname="Aspect Height">
@@ -125,7 +113,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="14445" top="180" width="5745" height="4560">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Kienct">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Kinect">
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -191,9 +179,9 @@
    <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="11" dstpinname="Layer 1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="15">
-   <BOUNDS type="Box" left="8925" top="645" width="795" height="240">
+   <BOUNDS type="Box" left="8925" top="630" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8925" top="645" width="0" height="0">
+   <BOUNDS type="Node" left="8925" top="630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -229,5 +217,45 @@
    </LINKPOINT>
    <LINKPOINT x="4410" y="1290">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="18">
+   <BOUNDS type="Node" left="4770" top="3525" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4770" top="3525" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="180" width="9810" height="4530">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TTY">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cursor (DX9)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.49.229-g30fb9f349f\vvvv\nodes\modules\DX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="5265" top="1575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 6">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="5985" top="630" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5985" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Cursor Enabled|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Enabled">
    </LINK>
    </PATCH>

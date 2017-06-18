@@ -309,12 +309,12 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="TopicBackground-Enable">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Select + Show Topic|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="2" dstpinname="Input String">
+   <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="2" dstpinname="Input String" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="5" dstpinname="IntroductionDone">
    </LINK>
@@ -340,7 +340,7 @@
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="16050" top="1650" width="7215" height="10545">
+   <BOUNDS type="Window" left="8655" top="4905" width="7275" height="10545">
    </BOUNDS>
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="16" dstpinname="Input 1">
    </LINK>
@@ -348,9 +348,17 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="7" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="10" dstpinname="Input 1">
+   <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="10" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="1065" y="5955">
+   </LINKPOINT>
+   <LINKPOINT x="2415" y="5955">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="13" dstpinname="Input 1">
+   <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="13" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="1065" y="5963">
+   </LINKPOINT>
+   <LINKPOINT x="4110" y="5963">
+   </LINKPOINT>
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
