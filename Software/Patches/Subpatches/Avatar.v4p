@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Avatar.v4p" systemname="Avatar" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Avatar.v4p">
-   <BOUNDS type="Window" left="8280" top="675" width="5370" height="10230">
+   <BOUNDS type="Window" left="17895" top="2250" width="5370" height="10230">
    </BOUNDS>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="1122" top="7914" width="100" height="100">
+   <BOUNDS type="Node" left="1572" top="7914" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -15,9 +15,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="9" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1122" top="8358" width="792" height="240">
+   <BOUNDS type="Box" left="1572" top="8358" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1122" top="8358" width="0" height="0">
+   <BOUNDS type="Node" left="1572" top="8358" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer-Avatar">
    </PIN>
@@ -25,7 +25,7 @@
    <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="9" dstpinname="Input Node">
    </LINK>
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="1470" top="4818" width="100" height="100">
+   <BOUNDS type="Node" left="1920" top="4818" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filename" visible="1">
    </PIN>
@@ -37,7 +37,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="1470" top="4338" width="100" height="100">
+   <BOUNDS type="Node" left="1920" top="4338" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filenames" visible="1">
    </PIN>
@@ -47,9 +47,9 @@
    <LINK srcnodeid="7" srcpinname="Filenames" dstnodeid="8" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1650" top="3822" width="1032" height="240">
+   <BOUNDS type="Box" left="2100" top="3822" width="1032" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1650" top="3822" width="0" height="0">
+   <BOUNDS type="Node" left="2100" top="3822" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\Assets\Avatar">
    </PIN>
@@ -67,7 +67,7 @@
    <LINK srcnodeid="8" srcpinname="Texture Out" dstnodeid="10" dstpinname="Texture">
    </LINK>
    <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="690" top="6486" width="100" height="100">
+   <BOUNDS type="Node" left="1140" top="6486" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -79,7 +79,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="1806" top="5610" width="100" height="100">
+   <BOUNDS type="Node" left="2256" top="5610" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
@@ -91,7 +91,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="1554" top="6042" width="100" height="100">
+   <BOUNDS type="Node" left="2004" top="6042" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -101,9 +101,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="870" top="5610" width="792" height="240">
+   <BOUNDS type="Box" left="1320" top="5610" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="870" top="5610" width="0" height="0">
+   <BOUNDS type="Node" left="1320" top="5610" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.22">
    </PIN>
@@ -123,9 +123,9 @@
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2358" top="5538" width="204" height="240">
+   <BOUNDS type="Node" left="2808" top="5538" width="204" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="2358" top="5538" width="1356" height="1236">
+   <BOUNDS type="Box" left="2808" top="5538" width="1356" height="1236">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|||&cr;&lf;||&cr;&lf;|| Seitenverhältnis &cr;&lf;|| des Avatars&cr;&lf;||&cr;&lf;|||">
    </PIN>
@@ -143,9 +143,9 @@
    <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="10" dstpinname="Transform">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2262" top="7278" width="480" height="480">
+   <BOUNDS type="Box" left="2712" top="7278" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2262" top="7278" width="0" height="0">
+   <BOUNDS type="Node" left="2712" top="7278" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -165,7 +165,7 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="861" top="2508" width="100" height="100">
+   <BOUNDS type="Node" left="1311" top="2508" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0.624984509730712">
    </PIN>
@@ -175,7 +175,7 @@
    </PIN>
    </NODE>
    <NODE systemname="InputMorph (Value)" nodename="InputMorph (Value)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="873" top="3012" width="100" height="100">
+   <BOUNDS type="Node" left="1323" top="3012" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -191,9 +191,9 @@
    <LINK srcnodeid="14" srcpinname="Output" dstnodeid="2" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
-   <BOUNDS type="Box" left="861" top="1668" width="792" height="240">
+   <BOUNDS type="Box" left="1311" top="1668" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="861" top="1668" width="0" height="0">
+   <BOUNDS type="Node" left="1311" top="1668" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
    </PIN>
@@ -203,7 +203,7 @@
    </PIN>
    </NODE>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="861" top="2076" width="100" height="100">
+   <BOUNDS type="Node" left="1311" top="2076" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Pause" visible="1">
    </PIN>
@@ -213,9 +213,9 @@
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Period">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="1977" top="1656" width="204" height="240">
+   <BOUNDS type="Node" left="2427" top="1656" width="204" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="1977" top="1656" width="1284" height="1680">
+   <BOUNDS type="Box" left="2427" top="1656" width="1284" height="1680">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|||&cr;&lf;||&cr;&lf;|| Pulsieren des&cr;&lf;|| Avatars&cr;&lf;||&cr;&lf;||&cr;&lf;||&cr;&lf;|||">
    </PIN>
@@ -227,9 +227,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
-   <BOUNDS type="Box" left="2400" top="675" width="480" height="480">
+   <BOUNDS type="Box" left="2850" top="675" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2400" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="2850" top="675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -245,5 +245,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Pause">
+   </LINK>
+   <NODE systemname="WithinProjection (Transform)" nodename="WithinProjection (Transform)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="675" top="5190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Transform Out" dstnodeid="5" dstpinname="Transform In">
    </LINK>
    </PATCH>
