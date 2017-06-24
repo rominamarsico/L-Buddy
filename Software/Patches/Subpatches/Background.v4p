@@ -81,7 +81,7 @@
    </PIN>
    </NODE>
    <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Interaktion I/O|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Saved Interaktion I/O|">
    </PIN>
    <BOUNDS type="Box" left="3027" top="768" width="750" height="240">
    </BOUNDS>
@@ -132,7 +132,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="19815" top="8385" width="8820" height="6360">
+   <BOUNDS type="Window" left="8220" top="8025" width="8820" height="5655">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
