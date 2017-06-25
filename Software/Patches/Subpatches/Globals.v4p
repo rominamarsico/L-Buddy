@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Globals.v4p" systemname="Globals" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Globals.v4p">
-   <BOUNDS type="Window" left="5865" top="5055" width="8925" height="8655">
+   <BOUNDS type="Window" left="10935" top="6585" width="8925" height="8655">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -19,9 +19,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="10" values="0,1,1,0,0,0,0,0,0,0">
+   <PIN pinname="X Input Value" slicecount="10" values="1,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="0,1,1,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" slicecount="10" values="1,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="5">
