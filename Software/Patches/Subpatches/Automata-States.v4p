@@ -304,7 +304,7 @@
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="10200" top="4830" width="7800" height="8535">
+   <BOUNDS type="Window" left="7095" top="4830" width="7800" height="7590">
    </BOUNDS>
    <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="7" dstpinname="Input 1">
    </LINK>
@@ -348,20 +348,6 @@
    <PIN pinname="Send String" slicecount="1" values="ShowTopic-State">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="48">
-   <BOUNDS type="Node" left="4530" top="4500" width="1830" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4530" top="4500" width="1830" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&gt;&gt; Change-States Patch|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="47" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="49">
@@ -395,5 +381,15 @@
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="5" dstpinname="IntroductionDone">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="RepeatIntroduction" linkstyle="PolyLine">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="1050" top="4200" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="Start-State">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="51" dstpinname="Input Value">
    </LINK>
    </PATCH>
