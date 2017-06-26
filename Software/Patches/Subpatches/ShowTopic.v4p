@@ -10,7 +10,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="10140" top="2700" width="15315" height="10290">
+   <BOUNDS type="Window" left="1065" top="4470" width="15315" height="10290">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -752,16 +752,8 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Resolution Y">
-   </LINK>
    <LINK srcnodeid="99" srcpinname="Transform Out" dstnodeid="83" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Transform Out" dstnodeid="87" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="95" srcpinname="Layer" dstnodeid="96" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="96" dstpinname="Layer 3">
-   </LINK>
-   <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="96" dstpinname="Layer 4">
    </LINK>
    </PATCH>
