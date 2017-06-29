@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Globals.v4p" systemname="Globals" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Globals.v4p">
-   <BOUNDS type="Window" left="10935" top="6585" width="8925" height="8655">
+   <BOUNDS type="Window" left="9585" top="3930" width="8910" height="8640">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -19,9 +19,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="10" values="1,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="X Input Value" slicecount="10" values="1,1,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="1,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" slicecount="10" values="1,1,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="5">
@@ -211,7 +211,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="2520" top="7005" width="1815" height="270">
+   <BOUNDS type="Node" left="2490" top="7005" width="1815" height="270">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -226,4 +226,32 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output 5" dstnodeid="18" dstpinname="Send String">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="705" top="6645" width="1560" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="705" top="6645" width="1560" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Mapping-Grid Patch|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="840" top="7005" width="1560" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="840" top="7005" width="1560" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Mapping-Grid Patch|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
