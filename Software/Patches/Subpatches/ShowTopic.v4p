@@ -35,9 +35,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2115" top="4002" width="480" height="480">
+   <BOUNDS type="Box" left="2115" top="3705" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2115" top="4002" width="0" height="0">
+   <BOUNDS type="Node" left="2115" top="3705" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -842,8 +842,6 @@
    <BOUNDS type="Box" left="840" top="4725">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Enabled">
-   </LINK>
    <LINK srcnodeid="55" srcpinname="Output Node" dstnodeid="53" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Layer" dstnodeid="48" dstpinname="Input Node">
@@ -853,5 +851,19 @@
    <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="96" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="96" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="129">
+   <BOUNDS type="Node" left="2115" top="4335" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="FilterTime" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="129" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Position Out" dstnodeid="53" dstpinname="Enabled">
    </LINK>
    </PATCH>

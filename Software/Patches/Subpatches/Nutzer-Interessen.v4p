@@ -1,0 +1,325 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Nutzer-Interessen.v4p" systemname="Nutzer-Interessen" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Nutzer-Interessen.v4p">
+   <BOUNDS type="Window" left="21210" top="405" width="7440" height="8055">
+   </BOUNDS>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3435" top="495" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3435" top="495" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="zurück-Trigger">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="5" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1245" top="6660" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1245" top="6660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
+   <BOUNDS type="Box" left="4215" top="6660" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4215" top="6660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Themen Auswahl|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Interessens-Karten" filename="Interessens-Karten.v4p" nodename="Interessens-Karten" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1260" top="4928" width="1770" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="2040" width="10525" height="11500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15150" top="660" width="10095" height="12315">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enable-State-1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enable-State-2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enable-State-3" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Automata-Interessen" filename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Automata-Interessen.v4p" nodename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Automata-Interessen.v4p" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1245" top="2963" width="2805" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="255" top="885" width="9075" height="5710">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20820" top="7680" width="7290" height="6750">
+   </BOUNDS>
+   <PIN pinname="Y Input Value 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Start-new" visible="1">
+   </PIN>
+   <PIN pinname="State-1" visible="1">
+   </PIN>
+   <PIN pinname="State 2" visible="1">
+   </PIN>
+   <PIN pinname="State 3" visible="1">
+   </PIN>
+   <PIN pinname="State-2" visible="1">
+   </PIN>
+   <PIN pinname="State-3" visible="1">
+   </PIN>
+   <PIN pinname="Topic1" visible="1">
+   </PIN>
+   <PIN pinname="Topic2" visible="1">
+   </PIN>
+   <PIN pinname="selectTopic" visible="1">
+   </PIN>
+   <PIN pinname="Timer" visible="1">
+   </PIN>
+   <PIN pinname="DoState_4" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Start-new">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output 1" dstnodeid="4" dstpinname="Y Input Value 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output 2" dstnodeid="4" dstpinname="Y Input Value 2">
+   </LINK>
+   <NODE systemname="Change-State-Interessen" filename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Change-State-Interessen.v4p" componentmode="Hidden" id="1" nodename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Change-State-Interessen.v4p">
+   <BOUNDS type="Node" left="1697" top="2280" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1697" top="2280" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9555" top="3555" width="10470" height="8130">
+   </BOUNDS>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Left Button" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Mouse-Left-Button" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 1" dstnodeid="3" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Interessen-Auswahl" filename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Interessen-Auswahl.v4p" nodename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Interessen-Auswahl.v4p" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2732" top="5730" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2732" top="5730" width="7195" height="10810">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14490" top="2040" width="9255" height="11325">
+   </BOUNDS>
+   <PIN pinname="PointsXY" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Input 2 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Point Hit" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Mouse" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Mouse-Left-Button" visible="1">
+   </PIN>
+   <PIN pinname="MouseXY" visible="1">
+   </PIN>
+   <PIN pinname="Enable-State-1" visible="1">
+   </PIN>
+   <PIN pinname="Enable-State-2" visible="1">
+   </PIN>
+   <PIN pinname="Enable-State-3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform1">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Transform Out 1" dstnodeid="2" dstpinname="Transform2">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="PositionXY" dstnodeid="2" dstpinname="PointsXY">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Point Hit" dstnodeid="1" dstpinname="Input 1">
+   <LINKPOINT x="1010" y="6220">
+   </LINKPOINT>
+   <LINKPOINT x="1165" y="2210">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-1" dstnodeid="4" dstpinname="Enable-State-1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-1" dstnodeid="2" dstpinname="Enable-State-1">
+   <LINKPOINT x="3525" y="4305">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-2" dstnodeid="4" dstpinname="Enable-State-2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-3" dstnodeid="4" dstpinname="Enable-State-3">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-2" dstnodeid="2" dstpinname="Enable-State-2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-3" dstnodeid="2" dstpinname="Y Input Value 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-3" dstnodeid="1" dstpinname="Input 3">
+   <LINKPOINT x="4430" y="3700">
+   </LINKPOINT>
+   <LINKPOINT x="4960" y="1790">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-1" dstnodeid="1" dstpinname="Input 4">
+   <LINKPOINT x="740" y="3430">
+   </LINKPOINT>
+   <LINKPOINT x="940" y="1775">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
+   <BOUNDS type="Box" left="5220" top="480" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5220" top="480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse-Left-Button">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Mouse-Left-Button">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Mouse-Left-Button">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="5040" top="4200" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5040" top="4200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.147869674185464,-0.684563758389262">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="MouseXY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="2" dstpinname="MouseXY">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-3" dstnodeid="2" dstpinname="Enable-State-3">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="State-2" dstnodeid="1" dstpinname="Input 2">
+   <LINKPOINT x="4940" y="4270">
+   </LINKPOINT>
+   <LINKPOINT x="5785" y="1160">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 1" dstnodeid="3" dstpinname="Topic1">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 2" dstnodeid="3" dstpinname="Topic2">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 3" dstnodeid="3" dstpinname="selectTopic">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9">
+   <BOUNDS type="Box" left="330" top="1020" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="330" top="1020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Timer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Timer">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
+   <BOUNDS type="Box" left="5760" top="6630" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5760" top="6630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="DoState_4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="DoState_4" dstnodeid="11" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>

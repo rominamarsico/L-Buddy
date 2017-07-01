@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\L Buddy.v4p" systemname="L Buddy" filename="C:\Users\Romina\Documents\Hochschule\6. Semester\_P6\L Buddy.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1380" top="180" width="11610" height="14160">
+   <BOUNDS type="Window" left="1380" top="180" width="12015" height="14160">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="37">
    <BOUNDS type="Node" left="525" top="345" width="660" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="525" top="345" width="1992" height="480">
+   <BOUNDS type="Box" left="525" top="345" width="2070" height="660">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|L Buddy|">
    </PIN>
@@ -17,7 +17,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Size" slicecount="1" values="15">
+   <PIN pinname="Size" slicecount="1" values="20">
    </PIN>
    </NODE>
    <NODE systemname="ShowTopic" filename="Subpatches\ShowTopic.v4p" nodename="Subpatches\ShowTopic.v4p" componentmode="Hidden" id="115">
@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5655" top="6960" width="5460" height="9276">
    </BOUNDS>
-   <BOUNDS type="Window" left="7716" top="780" width="8400" height="10944">
+   <BOUNDS type="Window" left="19590" top="2190" width="8400" height="10935">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -84,6 +84,8 @@
    <PIN pinname="PointsXY" visible="1">
    </PIN>
    <PIN pinname="Saved Interaktion I/O" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="119" srcpinname="Karten-Nummer" dstnodeid="115" dstpinname="Karten-Nummer" linkstyle="PolyLine">
@@ -141,7 +143,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3645" top="11760" width="6468" height="4108">
    </BOUNDS>
-   <BOUNDS type="Window" left="11325" top="6975" width="10725" height="5850">
+   <BOUNDS type="Window" left="1950" top="5700" width="11505" height="5850">
    </BOUNDS>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -168,6 +170,8 @@
    <PIN pinname="Layer 7" visible="1">
    </PIN>
    <PIN pinname="Layer 8" visible="1">
+   </PIN>
+   <PIN pinname="Layer 9" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="126">
@@ -197,7 +201,7 @@
    </PIN>
    <PIN pinname="Layer-Karten" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9720" top="1455" width="10050" height="9720">
+   <BOUNDS type="Window" left="15075" top="2760" width="10050" height="9720">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -305,18 +309,18 @@
    </PIN>
    <BOUNDS type="Box" left="3885" top="10170">
    </BOUNDS>
-   <BOUNDS type="Window" left="17895" top="2250" width="5070" height="10230">
+   <BOUNDS type="Window" left="2985" top="2385" width="8565" height="9960">
    </BOUNDS>
    <PIN pinname="Pause" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="172" srcpinname="Start" dstnodeid="176" dstpinname="Enabled" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="172" srcpinname="Inverse Output" dstnodeid="176" dstpinname="Pause" linkstyle="VHV">
-   <LINKPOINT x="4200" y="9936">
-   </LINKPOINT>
-   <LINKPOINT x="4644" y="9936">
-   </LINKPOINT>
+   <LINK srcnodeid="172" srcpinname="Inverse Output" dstnodeid="176" dstpinname="Pause" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="115" dstpinname="Karten-Index" linkstyle="PolyLine">
    <LINKPOINT x="5955" y="9540">
@@ -397,7 +401,7 @@
    </BOUNDS>
    <PIN pinname="FPS" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9585" top="3930" width="8910" height="8640">
+   <BOUNDS type="Window" left="4155" top="4440" width="8910" height="8640">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="199">
@@ -427,13 +431,17 @@
    </PIN>
    <BOUNDS type="Box" left="3885" top="4860">
    </BOUNDS>
-   <BOUNDS type="Window" left="12840" top="7110" width="10560" height="7080">
+   <BOUNDS type="Window" left="6570" top="6450" width="12495" height="7080">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Geste-Zurück" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Geste-Weiter" visible="1">
+   </PIN>
+   <PIN pinname="F2-Retrigger" visible="1">
+   </PIN>
+   <PIN pinname="Interessen-ausgewählt" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="200" srcpinname="F2" dstnodeid="172" dstpinname="RepeatIntroduction">
@@ -661,9 +669,9 @@
    </LINKPOINT>
    </LINK>
    <NODE id="129" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2835" top="1080" width="1512" height="240">
+   <BOUNDS type="Node" left="3840" top="1080" width="1512" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="2835" top="1080" width="3465" height="1275">
+   <BOUNDS type="Box" left="3840" top="1080" width="3675" height="1950">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|States:&cr;&lf;&cr;&lf;F2 - Avatar&cr;&lf;F3 - Themen Auswahl&cr;&lf;F4 - Thema&cr;&lf;|">
    </PIN>
@@ -672,6 +680,8 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
    </NODE>
    <NODE systemname="MQTT_Sender(help)" filename="Subpatches\MQTT_Sender(help).v4p" nodename="Subpatches\MQTT_Sender(help).v4p" componentmode="Hidden" id="215">
@@ -686,6 +696,8 @@
    <PIN pinname="Message 1" visible="1">
    </PIN>
    <PIN pinname="Switch-Message" visible="1">
+   </PIN>
+   <PIN pinname="Setup Connection" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="172" srcpinname="MQTT-Send" dstnodeid="215" dstpinname="Do send" linkstyle="VHV">
@@ -703,5 +715,83 @@
    </LINKPOINT>
    <LINKPOINT x="9000" y="6570">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="F2-Retrigger" dstnodeid="176" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="Nutzer-Interessen" filename="Subpatches\Nutzer-Interessen.v4p" componentmode="Hidden" id="233" nodename="Subpatches\Nutzer-Interessen.v4p">
+   <BOUNDS type="Node" left="9105" top="9345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9105" top="9345" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="21210" top="405" width="7440" height="8055">
+   </BOUNDS>
+   <PIN pinname="Themen Auswahl" visible="1">
+   </PIN>
+   <PIN pinname="zurück-Geste" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mouse-Left-Button" visible="1">
+   </PIN>
+   <PIN pinname="MouseXY" visible="1">
+   </PIN>
+   <PIN pinname="Timer" visible="1">
+   </PIN>
+   <PIN pinname="State-3" visible="1">
+   </PIN>
+   <PIN pinname="DoState_4" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Machine-Learning" filename="Subpatches\Machine-Learning.v4p" componentmode="Hidden" id="234" nodename="Subpatches\Machine-Learning.v4p">
+   <BOUNDS type="Node" left="9780" top="9885" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9780" top="9885" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5085" top="1980" width="16350" height="10320">
+   </BOUNDS>
+   <PIN pinname="Interessen-Auswahl" visible="1">
+   </PIN>
+   <PIN pinname="Train" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="233" srcpinname="Themen Auswahl" dstnodeid="234" dstpinname="Interessen-Auswahl">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="F2-Retrigger" dstnodeid="233" dstpinname="zurück-Trigger">
+   </LINK>
+   <LINK srcnodeid="233" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 9">
+   </LINK>
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="235">
+   <BOUNDS type="Node" left="9840" top="5460" width="1350" height="270">
+   </BOUNDS>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   <PIN pinname="Left Button" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="235" srcpinname="PositionXY" dstnodeid="119" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Left Button" dstnodeid="233" dstpinname="Mouse-Left-Button" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="PositionXY" dstnodeid="233" dstpinname="MouseXY" linkstyle="Bezier">
+   <LINKPOINT x="10030" y="7538">
+   </LINKPOINT>
+   <LINKPOINT x="10040" y="7538">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="233" dstpinname="Timer">
+   </LINK>
+   <LINK srcnodeid="233" srcpinname="DoState_4" dstnodeid="200" dstpinname="Interessen-ausgewählt">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="237">
+   <BOUNDS type="Node" left="10770" top="6225" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   <PIN pinname="Simulate" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="237" srcpinname="Bang" dstnodeid="215" dstpinname="Setup Connection">
+   </LINK>
+   <LINK srcnodeid="237" srcpinname="Bang" dstnodeid="234" dstpinname="Train">
    </LINK>
    </PATCH>
