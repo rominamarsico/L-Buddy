@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Licht.v4p" systemname="Licht" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Licht.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="8235" top="5730" width="8775" height="7170">
+   <BOUNDS type="Window" left="8235" top="5730" width="12000" height="7170">
    </BOUNDS>
    <NODE systemname="Trainer (ML.Learning SVM)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Trainer (ML.Learning SVM)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="1848" top="2794" width="3240" height="270">
@@ -175,9 +175,9 @@
    <NODE id="7" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Vector Size|">
    </PIN>
-   <BOUNDS type="Box" left="9360" top="1890" width="750" height="240">
+   <BOUNDS type="Box" left="8835" top="900" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9360" top="1890" width="750" height="240">
+   <BOUNDS type="Node" left="8835" top="900" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -187,9 +187,9 @@
    <NODE id="6" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Labels">
    </PIN>
-   <BOUNDS type="Box" left="8700" top="1275" width="750" height="240">
+   <BOUNDS type="Box" left="7935" top="360" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8700" top="1275" width="750" height="240">
+   <BOUNDS type="Node" left="7935" top="360" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Labels">
@@ -199,37 +199,19 @@
    <NODE id="4" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Training Error|">
    </PIN>
-   <BOUNDS type="Box" left="2310" top="3340" width="750" height="240">
+   <BOUNDS type="Box" left="2310" top="3345" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2310" top="3340" width="750" height="240">
+   <BOUNDS type="Node" left="2310" top="3345" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Training Error" dstnodeid="4" dstpinname="Y Input Value">
    </LINK>
-   <NODE id="3" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Success">
-   </PIN>
-   <BOUNDS type="Box" left="3735" top="3340" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3735" top="3340" width="750" height="240">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="19" srcpinname="Success" dstnodeid="3" dstpinname="Y Input Value">
-   </LINK>
    <NODE id="2" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
-   <BOUNDS type="Box" left="10260" top="2940" width="750" height="240">
+   <BOUNDS type="Box" left="9645" top="1545" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10260" top="2940" width="750" height="240">
-   </BOUNDS>
-   </NODE>
-   <NODE id="1" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Class">
-   </PIN>
-   <BOUNDS type="Box" left="1848" top="5749" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1848" top="5749" width="750" height="240">
+   <BOUNDS type="Node" left="9645" top="1545" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Sigma">
@@ -241,21 +223,21 @@
    </BOUNDS>
    <PIN pinname="Vector Size" visible="1">
    </PIN>
+   <PIN pinname="Class" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Model" dstnodeid="0" dstpinname="Model">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Class" dstnodeid="1" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Vector Size">
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
-   <BOUNDS type="Box" left="10695" top="2220" width="480" height="480">
+   <BOUNDS type="Box" left="10305" top="2325" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="10695" top="2220" width="0" height="0">
+   <BOUNDS type="Node" left="10305" top="2325" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -271,5 +253,41 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Train">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="1860" top="5820" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1860" top="5820" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Class">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Class" dstnodeid="21" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
+   <BOUNDS type="Box" left="3645" top="3345" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3645" top="3345" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Success">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Success" dstnodeid="22" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

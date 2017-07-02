@@ -326,8 +326,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="33" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 4">
-   </LINK>
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="18" systemname="Renderer (EX9)" filename="">
    <BOUNDS type="Node" left="2430" top="6300" width="0" height="0">
    </BOUNDS>
@@ -390,7 +388,7 @@
    <LINKPOINT x="3975" y="3960">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="15">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="465" top="6300" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="465" top="6300" width="2400" height="1800">

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Machine-Learning.v4p" systemname="Machine-Learning" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Machine-Learning.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5445" top="6795" width="14100" height="5955">
+   <BOUNDS type="Window" left="13680" top="1350" width="13215" height="7365">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5625" top="810" width="800" height="240">
@@ -81,7 +81,7 @@
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="8" values="Geschichte,Bio,Physik,Fotografie,Gesundheit,Geographie,|Wissenschaft &amp; Technik|,|Religion &amp; Kultur|">
+   <PIN pinname="Input String" slicecount="8" values="Geschichte,Bio,Physik,Gesundheit,Fotografie,Geographie,|Religion &amp; Kultur|,|Wissenschaft &amp; Technik|">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="2325" top="2355" width="11430" height="8220">
    </BOUNDS>
-   <PIN pinname="Train" slicecount="1" values="0" visible="1">
+   <PIN pinname="Train" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -159,13 +159,15 @@
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
+   <PIN pinname="Training Error" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Licht" filename="Licht.v4p" componentmode="Hidden" id="2" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Licht.v4p">
    <BOUNDS type="Node" left="3120" top="4470" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3120" top="4470" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="8235" top="5730" width="8775" height="7170">
+   <BOUNDS type="Window" left="8235" top="5730" width="12000" height="7170">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -190,6 +192,12 @@
    <PIN pinname="Train" visible="1">
    </PIN>
    <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Class" visible="1">
+   </PIN>
+   <PIN pinname="Training Error" visible="1">
+   </PIN>
+   <PIN pinname="Success" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Außerirdisches-Leben" filename="Außerirdisches-Leben.v4p" componentmode="Hidden" id="3" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Außerirdisches-Leben.v4p">
@@ -197,7 +205,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5595" top="4470" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="5130" top="3855" width="12480" height="8505">
+   <BOUNDS type="Window" left="9435" top="4845" width="12480" height="8730">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -222,14 +230,20 @@
    <PIN pinname="Train" visible="1">
    </PIN>
    <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Class" visible="1">
+   </PIN>
+   <PIN pinname="Training Error" visible="1">
+   </PIN>
+   <PIN pinname="Success" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Sterne" filename="Sterne.v4p" componentmode="Hidden" id="4" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Sterne.v4p">
-   <BOUNDS type="Node" left="7755" top="4470" width="100" height="100">
+   <BOUNDS type="Node" left="8220" top="4470" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7755" top="4470" width="4800" height="3600">
+   <BOUNDS type="Box" left="8220" top="4470" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="3945" top="2190" width="14355" height="7740">
+   <BOUNDS type="Window" left="3945" top="2190" width="11925" height="7740">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -254,6 +268,12 @@
    <PIN pinname="Train" visible="1">
    </PIN>
    <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Class" visible="1">
+   </PIN>
+   <PIN pinname="Training Error" visible="1">
+   </PIN>
+   <PIN pinname="Success" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Training" filename="Training.v4p" componentmode="Hidden" id="0" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Training.v4p">
@@ -261,7 +281,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3105" top="810" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="8760" top="390" width="19110" height="6000">
+   <BOUNDS type="Window" left="3960" top="9600" width="19110" height="6000">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -385,5 +405,189 @@
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="735" top="5160" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="735" top="5160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Class">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Class" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
+   <BOUNDS type="Box" left="1590" top="5010" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1590" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Training Error" dstnodeid="14" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
+   <BOUNDS type="Box" left="2475" top="5010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2475" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Success" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Box" left="3120" top="5160" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3120" top="5160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Class">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Class" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="3975" top="5010" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3975" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Training Error" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="4860" top="5010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4860" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Success" dstnodeid="19" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="5595" top="5160" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5595" top="5160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Class">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Class" dstnodeid="20" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="6465" top="5010" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6465" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Training Error" dstnodeid="21" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
+   <BOUNDS type="Box" left="7335" top="5010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7335" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Success" dstnodeid="22" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="8205" top="5160" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8205" top="5160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Class">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Class" dstnodeid="23" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="9090" top="5010" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9090" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Training Error" dstnodeid="24" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
+   <BOUNDS type="Box" left="9960" top="5010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9960" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Success" dstnodeid="25" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

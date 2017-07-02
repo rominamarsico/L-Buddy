@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Change-State-Interessen.v4p" systemname="Change-State-Interessen" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Change-State-Interessen.v4p">
-   <BOUNDS type="Window" left="13905" top="3960" width="9555" height="7770">
+   <BOUNDS type="Window" left="13815" top="6345" width="9555" height="7770">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="615" top="4230" width="480" height="480">
@@ -152,28 +152,6 @@
    </LINK>
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="24" dstpinname="Input">
    </LINK>
-   <NODE id="17" systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Output" visible="1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Node" left="600" top="1365" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1" pintype="Input" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="27" dstpinname="Input 1">
-   </LINK>
    <NODE id="16" systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="615" top="3345" width="100" height="100">
    </BOUNDS>
@@ -194,8 +172,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="16" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="28" srcpinname="Output" dstnodeid="16" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="29" dstpinname="Y Input Value">
@@ -308,8 +284,6 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="8" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="15" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="10" dstpinname="Enable">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
@@ -369,9 +343,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Point Hit|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="615" top="5790" width="480" height="480">
    </BOUNDS>
@@ -391,26 +365,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="25" srcpinname="Output 1" dstnodeid="2" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1455" top="600" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1455" top="600" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse-Left-Button">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input 2">
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -475,5 +429,11 @@
    <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input 1">
    </LINK>
    </PATCH>

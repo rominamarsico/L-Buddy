@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Nutzer-Interessen.v4p" systemname="Nutzer-Interessen" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Nutzer-Interessen.v4p">
-   <BOUNDS type="Window" left="6810" top="4650" width="8025" height="6990">
+   <BOUNDS type="Window" left="21225" top="3705" width="8025" height="6990">
    </BOUNDS>
    <NODE systemname="Change-State-Interessen" filename="Change-State-Interessen.v4p" componentmode="Hidden" id="0" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Change-State-Interessen.v4p">
    <BOUNDS type="Node" left="1230" top="1905" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1230" top="1905" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="13905" top="3960" width="9555" height="7770">
+   <BOUNDS type="Window" left="13815" top="6345" width="9555" height="7770">
    </BOUNDS>
    <PIN pinname="Point Hit" visible="1" slicecount="1" values="0">
    </PIN>
@@ -32,12 +32,12 @@
    <PIN pinname="Output 3" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Automata-Interessen" filename="Automata-Interessen.v4p" componentmode="Hidden" id="1" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Automata-Interessen.v4p">
+   <NODE systemname="Automata-Interessen" filename="Automata-Interessen.v4p" componentmode="InAWindow" id="1" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Automata-Interessen.v4p">
    <BOUNDS type="Node" left="1245" top="2910" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1245" top="2910" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="5430" top="7110" width="8025" height="6525">
+   <BOUNDS type="Window" left="13590" top="5550" width="8025" height="6525">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1260" top="3990" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="5535" top="855" width="9795" height="11970">
+   <BOUNDS type="Window" left="1200" top="810" width="10125" height="12960">
    </BOUNDS>
    <PIN pinname="Enable-State-1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -83,13 +83,19 @@
    </PIN>
    <PIN pinname="Transform Out 1" visible="1">
    </PIN>
+   <PIN pinname="Hover" visible="1">
+   </PIN>
+   <PIN pinname="Objekt ID" visible="1">
+   </PIN>
+   <PIN pinname="State-3" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Interessen-Auswahl" filename="Interessen-Auswahl.v4p" componentmode="Hidden" id="3" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Interessen-Auswahl.v4p">
    <BOUNDS type="Node" left="3420" top="5130" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3420" top="5130" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="5430" top="1095" width="9000" height="11625">
+   <BOUNDS type="Window" left="17580" top="4065" width="9855" height="11535">
    </BOUNDS>
    <PIN pinname="Enable-State-1" visible="1">
    </PIN>
@@ -108,6 +114,10 @@
    <PIN pinname="PointsXY" visible="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Hover" visible="1">
+   </PIN>
+   <PIN pinname="Object Id" visible="1">
    </PIN>
    </NODE>
    <PACK Name="addonpack" Version="35.0.0">
@@ -151,30 +161,6 @@
    </LINKPOINT>
    <LINKPOINT x="630" y="1085">
    </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
-   <BOUNDS type="Box" left="5520" top="615" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5520" top="615" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse-Left-Button">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Mouse-Left-Button">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Mouse-Left-Button">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Enable-State-2" dstnodeid="0" dstpinname="Input 2">
    <LINKPOINT x="4185" y="4240">
@@ -301,5 +287,11 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Timer">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Hover" dstnodeid="2" dstpinname="Hover">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Object Id" dstnodeid="2" dstpinname="Objekt ID">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Enable-State-3" dstnodeid="2" dstpinname="State-3">
    </LINK>
    </PATCH>
