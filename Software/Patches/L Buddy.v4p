@@ -171,7 +171,7 @@
    </PIN>
    <PIN pinname="Layer 8" visible="1">
    </PIN>
-   <PIN pinname="Layer 9" visible="1">
+   <PIN pinname="Layer 9" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="126">
@@ -718,48 +718,6 @@
    </LINK>
    <LINK srcnodeid="200" srcpinname="F2-Retrigger" dstnodeid="176" dstpinname="Reset">
    </LINK>
-   <NODE systemname="Nutzer-Interessen" filename="Subpatches\Nutzer-Interessen.v4p" componentmode="Hidden" id="233" nodename="Subpatches\Nutzer-Interessen.v4p">
-   <BOUNDS type="Node" left="9105" top="9345" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9105" top="9345" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="19710" top="2355" width="7440" height="8055">
-   </BOUNDS>
-   <PIN pinname="Themen Auswahl" visible="1">
-   </PIN>
-   <PIN pinname="zurück-Geste" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Mouse-Left-Button" visible="1">
-   </PIN>
-   <PIN pinname="MouseXY" visible="1">
-   </PIN>
-   <PIN pinname="Timer" visible="1">
-   </PIN>
-   <PIN pinname="State-3" visible="1">
-   </PIN>
-   <PIN pinname="DoState_4" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="Machine-Learning" filename="Subpatches\Machine-Learning.v4p" componentmode="Hidden" id="234" nodename="Subpatches\Machine-Learning.v4p">
-   <BOUNDS type="Node" left="9780" top="9885" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9780" top="9885" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="7245" top="1635" width="16350" height="10320">
-   </BOUNDS>
-   <PIN pinname="Interessen-Auswahl" visible="1">
-   </PIN>
-   <PIN pinname="Train" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="233" srcpinname="Themen Auswahl" dstnodeid="234" dstpinname="Interessen-Auswahl">
-   </LINK>
-   <LINK srcnodeid="200" srcpinname="F2-Retrigger" dstnodeid="233" dstpinname="zurück-Trigger">
-   </LINK>
-   <LINK srcnodeid="233" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 9">
-   </LINK>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="235">
    <BOUNDS type="Node" left="9840" top="5460" width="1350" height="270">
    </BOUNDS>
@@ -770,20 +728,8 @@
    </NODE>
    <LINK srcnodeid="235" srcpinname="PositionXY" dstnodeid="119" dstpinname="Mouse">
    </LINK>
-   <LINK srcnodeid="235" srcpinname="Left Button" dstnodeid="233" dstpinname="Mouse-Left-Button" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="235" srcpinname="PositionXY" dstnodeid="233" dstpinname="MouseXY" linkstyle="Bezier">
-   <LINKPOINT x="10030" y="7538">
-   </LINKPOINT>
-   <LINKPOINT x="10040" y="7538">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="233" dstpinname="Timer">
-   </LINK>
-   <LINK srcnodeid="233" srcpinname="DoState_4" dstnodeid="200" dstpinname="Interessen-ausgewählt">
-   </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="237">
-   <BOUNDS type="Node" left="10770" top="6225" width="100" height="100">
+   <BOUNDS type="Node" left="10875" top="6270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -792,6 +738,54 @@
    </NODE>
    <LINK srcnodeid="237" srcpinname="Bang" dstnodeid="215" dstpinname="Setup Connection">
    </LINK>
-   <LINK srcnodeid="237" srcpinname="Bang" dstnodeid="234" dstpinname="Train">
+   <NODE systemname="Machine-Learning" filename="Subpatches\Machine-Learning.v4p" componentmode="Hidden" id="238" nodename="Subpatches\Machine-Learning.v4p">
+   <BOUNDS type="Node" left="9975" top="10260" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9975" top="10260" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5445" top="6795" width="14100" height="5955">
+   </BOUNDS>
+   <PIN pinname="Train" visible="1">
+   </PIN>
+   <PIN pinname="Interessen-Auswahl" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="237" srcpinname="Bang" dstnodeid="238" dstpinname="Train">
+   </LINK>
+   <NODE systemname="Nutzer-Interessen" filename="Subpatches\Nutzer-Interessen.v4p" componentmode="Hidden" id="239" nodename="Subpatches\Nutzer-Interessen.v4p">
+   <BOUNDS type="Node" left="9990" top="9630" width="1440" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9990" top="9630" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6810" top="4650" width="8025" height="6990">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mouse-Left-Button" visible="1">
+   </PIN>
+   <PIN pinname="PointsXY" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Themen-Auswahl" visible="1">
+   </PIN>
+   <PIN pinname="DoState_4" visible="1">
+   </PIN>
+   <PIN pinname="Timer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="239" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 9">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Left Button" dstnodeid="239" dstpinname="Mouse-Left-Button">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="PositionXY" dstnodeid="239" dstpinname="PointsXY">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="F2-Retrigger" dstnodeid="239" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Themen-Auswahl" dstnodeid="238" dstpinname="Interessen-Auswahl">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="DoState_4" dstnodeid="200" dstpinname="Interessen-ausgewählt">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="239" dstpinname="Timer">
    </LINK>
    </PATCH>
