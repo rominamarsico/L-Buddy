@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\Hochschule\6.Semester\vvvv\_P6\P6-tests\Tenniswetter\Subpatches\NASA.v4p" systemname="NASA" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\vvvv\_P6\P6-tests\Tenniswetter\NASA.v4p">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\NASA.v4p" systemname="NASA" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\NASA.v4p">
    <NODE systemname="Trainer (ML.Learning SVM)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Trainer (ML.Learning SVM)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2010" top="3915" width="3240" height="270">
    </BOUNDS>

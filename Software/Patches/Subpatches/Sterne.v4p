@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\Hochschule\6.Semester\vvvv\_P6\P6-tests\Tenniswetter\Subpatches\Sterne.v4p" systemname="Sterne" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\vvvv\_P6\P6-tests\Tenniswetter\Sterne.v4p">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Sterne.v4p" systemname="Sterne" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Sterne.v4p">
    <NODE systemname="Trainer (ML.Learning SVM)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Trainer (ML.Learning SVM)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2403" top="3426" width="3240" height="270">
    </BOUNDS>
@@ -251,7 +251,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2400" top="6000">
    </BOUNDS>
-   <PIN pinname="Vector Size" slicecount="1" values="1" visible="1">
+   <PIN pinname="Vector Size" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Model" dstnodeid="21" dstpinname="Model">

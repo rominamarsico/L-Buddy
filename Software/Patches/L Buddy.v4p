@@ -441,7 +441,7 @@
    </PIN>
    <PIN pinname="F2-Retrigger" visible="1">
    </PIN>
-   <PIN pinname="Interessen-ausgewählt" visible="1">
+   <PIN pinname="Interessen-ausgewählt" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="200" srcpinname="F2" dstnodeid="172" dstpinname="RepeatIntroduction">
@@ -723,7 +723,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9105" top="9345" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="21210" top="405" width="7440" height="8055">
+   <BOUNDS type="Window" left="19710" top="2355" width="7440" height="8055">
    </BOUNDS>
    <PIN pinname="Themen Auswahl" visible="1">
    </PIN>
@@ -739,7 +739,7 @@
    </PIN>
    <PIN pinname="State-3" visible="1">
    </PIN>
-   <PIN pinname="DoState_4" visible="1">
+   <PIN pinname="DoState_4" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Machine-Learning" filename="Subpatches\Machine-Learning.v4p" componentmode="Hidden" id="234" nodename="Subpatches\Machine-Learning.v4p">
@@ -747,7 +747,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9780" top="9885" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="5085" top="1980" width="16350" height="10320">
+   <BOUNDS type="Window" left="7245" top="1635" width="16350" height="10320">
    </BOUNDS>
    <PIN pinname="Interessen-Auswahl" visible="1">
    </PIN>

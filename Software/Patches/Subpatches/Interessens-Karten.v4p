@@ -449,7 +449,7 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="9" dstpinname="TranslateX">
    </LINK>
    <NODE id="40" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out 1|">
    </PIN>
    <BOUNDS type="Box" left="3630" top="10500" width="750" height="240">
    </BOUNDS>
@@ -499,7 +499,7 @@
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="16" dstpinname="TranslateX">
    </LINK>
    <NODE id="43" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out 1|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out 2|">
    </PIN>
    <BOUNDS type="Box" left="6600" top="10500" width="750" height="240">
    </BOUNDS>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Machine-Learning.v4p" systemname="Machine-Learning" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Machine-Learning.v4p">
-   <BOUNDS type="Window" left="5085" top="1980" width="16350" height="10320">
+   <BOUNDS type="Window" left="7245" top="1635" width="16350" height="10320">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1590" top="7695" width="800" height="240">
@@ -316,7 +316,7 @@
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="Außerirdisches-Leben" filename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Außerirdisches-Leben.v4p" nodename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Außerirdisches-Leben.v4p" componentmode="Hidden" id="7">
+   <NODE systemname="Außerirdisches-Leben" filename="Außerirdisches-Leben.v4p" nodename="Außerirdisches-Leben.v4p" componentmode="Hidden" id="7">
    <BOUNDS type="Node" left="7785" top="7245" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="7785" top="7245" width="6240" height="4996">
@@ -339,78 +339,6 @@
    <LINK srcnodeid="7" srcpinname="Class" dstnodeid="14" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Licht" filename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Licht.v4p" nodename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Licht.v4p" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="4035" top="7245" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4035" top="7245" width="6258" height="5119">
-   </BOUNDS>
-   <BOUNDS type="Window" left="405" top="3150" width="8415" height="7410">
-   </BOUNDS>
-   <PIN pinname="Compute" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Vector Size">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Train">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Training Error" dstnodeid="18" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Success" dstnodeid="16" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Class" dstnodeid="17" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input">
-   </LINK>
-   <NODE systemname="NASA" filename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\NASA.v4p" nodename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\NASA.v4p" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="720" top="7245" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="720" top="7245" width="6240" height="4615">
-   </BOUNDS>
-   <BOUNDS type="Window" left="4230" top="4020" width="8370" height="8505">
-   </BOUNDS>
-   <PIN pinname="Compute" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Vector Size">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Train">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Training Error" dstnodeid="23" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Success" dstnodeid="21" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Class" dstnodeid="22" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Sterne" filename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Sterne.v4p" nodename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Sterne.v4p" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="11145" top="7245" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11145" top="7245" width="6243" height="4606">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2475" top="3135" width="8925" height="7980">
-   </BOUNDS>
-   <PIN pinname="Compute" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Vector Size">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Train">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Training Error" dstnodeid="12" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Success" dstnodeid="10" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Class" dstnodeid="11" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input">
    </LINK>
    <NODE systemname="Training" filename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Training.v4p" nodename="..\..\..\..\..\..\Desktop\Tenniswetter\Subpatches\Training.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5997" top="1280" width="1800" height="270">
@@ -438,6 +366,30 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value 7" dstnodeid="7" dstpinname="Input 8">
    </LINK>
+   <NODE systemname="Licht" filename="Licht.v4p" nodename="Licht.v4p" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="4035" top="7245" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4035" top="7245" width="6258" height="5119">
+   </BOUNDS>
+   <BOUNDS type="Window" left="405" top="3150" width="8415" height="7410">
+   </BOUNDS>
+   <PIN pinname="Compute" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Vector Size">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Train">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Training Error" dstnodeid="18" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Success" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Class" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input">
+   </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value 2" dstnodeid="8" dstpinname="Input 3">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input 1">
@@ -456,6 +408,30 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value 7" dstnodeid="8" dstpinname="Input 8">
    </LINK>
+   <NODE systemname="NASA" filename="NASA.v4p" nodename="NASA.v4p" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="720" top="7245" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="720" top="7245" width="6240" height="4615">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4230" top="4020" width="8370" height="8505">
+   </BOUNDS>
+   <PIN pinname="Compute" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Vector Size">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Train">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Training Error" dstnodeid="23" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Success" dstnodeid="21" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Class" dstnodeid="22" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
+   </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value 2" dstnodeid="9" dstpinname="Input 3">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input 1">
@@ -473,6 +449,30 @@
    <LINK srcnodeid="0" srcpinname="Y Output Value 7" dstnodeid="9" dstpinname="Input 8">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value 8" dstnodeid="9" dstpinname="Labels">
+   </LINK>
+   <NODE systemname="Sterne" filename="Sterne.v4p" nodename="Sterne.v4p" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="11145" top="7245" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11145" top="7245" width="6243" height="4606">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2475" top="3135" width="8925" height="7980">
+   </BOUNDS>
+   <PIN pinname="Compute" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Vector Size">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Train">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Training Error" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Success" dstnodeid="10" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Class" dstnodeid="11" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value 2" dstnodeid="6" dstpinname="Input 3">
    </LINK>
