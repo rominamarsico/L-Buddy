@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Licht.v4p" systemname="Licht" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Licht.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="8235" top="5730" width="12000" height="7170">
+   <BOUNDS type="Window" left="5184" top="2328" width="12000" height="7164">
    </BOUNDS>
    <NODE systemname="Trainer (ML.Learning SVM)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Trainer (ML.Learning SVM)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="1848" top="2794" width="3240" height="270">
@@ -224,6 +224,8 @@
    <PIN pinname="Vector Size" visible="1">
    </PIN>
    <PIN pinname="Class" visible="1">
+   </PIN>
+   <PIN pinname="Compute" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Model" dstnodeid="0" dstpinname="Model">

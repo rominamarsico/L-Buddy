@@ -304,7 +304,7 @@
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="12780" top="1464" width="7800" height="9024">
+   <BOUNDS type="Window" left="6000" top="2688" width="7800" height="9024">
    </BOUNDS>
    <LINK srcnodeid="5" srcpinname="Current state" dstnodeid="7" dstpinname="Input 1">
    </LINK>

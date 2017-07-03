@@ -181,6 +181,10 @@
    </BOUNDS>
    <BOUNDS type="Window" left="16410" top="195" width="4905" height="5055">
    </BOUNDS>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="EX9 Out" dstnodeid="29" dstpinname="Source">
    </LINK>

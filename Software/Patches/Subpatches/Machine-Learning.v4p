@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Machine-Learning.v4p" systemname="Machine-Learning" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Machine-Learning.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="13680" top="1350" width="13215" height="7365">
+   <BOUNDS type="Window" left="4152" top="1488" width="13212" height="7356">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5625" top="810" width="800" height="240">
@@ -167,7 +167,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3120" top="4470" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="8235" top="5730" width="12000" height="7170">
+   <BOUNDS type="Window" left="5184" top="2328" width="12000" height="7164">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -205,7 +205,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5595" top="4470" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="9435" top="4845" width="12480" height="8730">
+   <BOUNDS type="Window" left="6168" top="1656" width="12480" height="8724">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>

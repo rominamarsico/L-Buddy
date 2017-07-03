@@ -225,6 +225,8 @@
    </PIN>
    <PIN pinname="Class" visible="1">
    </PIN>
+   <PIN pinname="Compute" slicecount="1" visible="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Model" dstnodeid="0" dstpinname="Model">
    </LINK>
