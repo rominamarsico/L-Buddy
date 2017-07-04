@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\ShowTopic.v4p" systemname="ShowTopic" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\ShowTopic.v4p" scrollx="25710" scrolly="0">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\ShowTopic.v4p" systemname="ShowTopic" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\ShowTopic.v4p" scrollx="22365" scrolly="0">
    <NODE id="16" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Karten-Nummer">
    </PIN>
@@ -2181,7 +2181,7 @@
    <LINK srcnodeid="121" srcpinname="Texture Out" dstnodeid="128" dstpinname="Texture">
    </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="252">
-   <BOUNDS type="Node" left="29064" top="4044" width="100" height="100">
+   <BOUNDS type="Node" left="29364" top="3864" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -2227,9 +2227,9 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
-   <PIN pinname="TranslateX" slicecount="1" values="0.53" visible="1">
+   <PIN pinname="TranslateX" slicecount="1" visible="1" values="0.53">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="-0.34" visible="1">
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="-0.34">
    </PIN>
    </NODE>
    <LINK srcnodeid="256" srcpinname="Transform Out" dstnodeid="254" dstpinname="Transform In">
