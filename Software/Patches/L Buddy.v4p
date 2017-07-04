@@ -151,9 +151,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer-Pass" filename="Subpatches\Renderer-Pass.v4p" nodename="Subpatches\Renderer-Pass.v4p" componentmode="Hidden" id="125">
-   <BOUNDS type="Node" left="3645" top="11760" width="2100" height="270">
+   <BOUNDS type="Node" left="4365" top="11760" width="2100" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3645" top="11760" width="6468" height="4108">
+   <BOUNDS type="Box" left="4365" top="11760" width="6468" height="4108">
    </BOUNDS>
    <BOUNDS type="Window" left="1950" top="5700" width="11505" height="5850">
    </BOUNDS>
@@ -203,7 +203,7 @@
    </PIN>
    </NODE>
    <NODE systemname="SelectTopic" filename="Subpatches\SelectTopic.v4p" nodename="Subpatches\SelectTopic.v4p" componentmode="Hidden" id="127">
-   <BOUNDS type="Node" left="4425" top="9330" width="1095" height="270">
+   <BOUNDS type="Node" left="4635" top="9390" width="1095" height="270">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -217,7 +217,7 @@
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
-   <BOUNDS type="Box" left="4425" top="9330">
+   <BOUNDS type="Box" left="4635" top="9390">
    </BOUNDS>
    <PIN pinname="Background #0" visible="1">
    </PIN>
@@ -233,9 +233,9 @@
    <LINK srcnodeid="127" srcpinname="Karten-Interaktionsfläche" dstnodeid="119" dstpinname="Karten-Interaktionsfläche" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128">
-   <BOUNDS type="Box" left="6009" top="8565" width="492" height="516">
+   <BOUNDS type="Box" left="4629" top="7980" width="492" height="516">
    </BOUNDS>
-   <BOUNDS type="Node" left="6009" top="8565" width="0" height="0">
+   <BOUNDS type="Node" left="4629" top="7980" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,1">
    </PIN>
@@ -325,7 +325,7 @@
    </PIN>
    <BOUNDS type="Box" left="3885" top="10170">
    </BOUNDS>
-   <BOUNDS type="Window" left="180" top="804" width="22080" height="11076">
+   <BOUNDS type="Window" left="375" top="3660" width="17670" height="11070">
    </BOUNDS>
    <PIN pinname="Pause" visible="1">
    </PIN>
@@ -341,11 +341,11 @@
    <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="115" dstpinname="Karten-Index" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="115" srcpinname="Background #0" dstnodeid="127" dstpinname="Background #0">
-   <LINKPOINT x="1903" y="9627">
+   <LINKPOINT x="1955" y="9642">
    </LINKPOINT>
-   <LINKPOINT x="1548" y="8653">
+   <LINKPOINT x="1653" y="8683">
    </LINKPOINT>
-   <LINKPOINT x="1697" y="8508">
+   <LINKPOINT x="1855" y="8553">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="172" srcpinname="ShowTopic" dstnodeid="119" dstpinname="Switch">
@@ -379,9 +379,9 @@
    <LINK srcnodeid="193" srcpinname="Layer-Skeleton" dstnodeid="125" dstpinname="Layer 2 Kinect" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="193" srcpinname="Perspective" dstnodeid="125" dstpinname="View" linkstyle="VHV">
-   <LINKPOINT x="7940" y="11055">
+   <LINKPOINT x="8180" y="11055">
    </LINKPOINT>
-   <LINKPOINT x="4135" y="11055">
+   <LINKPOINT x="4615" y="11055">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="193" srcpinname="Left Hand" dstnodeid="119" dstpinname="Left Hand" linkstyle="VHV">
@@ -467,7 +467,7 @@
    <LINK srcnodeid="200" srcpinname="F3" dstnodeid="172" dstpinname="ChangeTopic">
    </LINK>
    <NODE systemname="Renderer-Entzerrung" filename="Subpatches\Renderer-Entzerrung.v4p" nodename="Subpatches\Renderer-Entzerrung.v4p" componentmode="Hidden" id="201">
-   <BOUNDS type="Node" left="3645" top="12345" width="100" height="100">
+   <BOUNDS type="Node" left="4365" top="12345" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="8496" top="2376" width="7632" height="8316">
    </BOUNDS>
@@ -477,7 +477,7 @@
    </PIN>
    <PIN pinname="Texture" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="3645" top="12345">
+   <BOUNDS type="Box" left="4365" top="12345">
    </BOUNDS>
    </NODE>
    <NODE systemname="Mapping-Grid" filename="Subpatches\Mapping-Grid.v4p" componentmode="Hidden" id="202" nodename="Subpatches\Mapping-Grid.v4p">
@@ -535,9 +535,9 @@
    <LINK srcnodeid="172" srcpinname="ShowTopic" dstnodeid="115" dstpinname="Enable-State 3" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="193" srcpinname="Layer-Skeleton" dstnodeid="125" dstpinname="Layer 8" linkstyle="VHV">
-   <LINKPOINT x="8595" y="11400">
+   <LINKPOINT x="8835" y="11400">
    </LINKPOINT>
-   <LINKPOINT x="5685" y="11400">
+   <LINKPOINT x="6165" y="11400">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="202" srcpinname="Layer-Grid" dstnodeid="125" dstpinname="Layer 7">
@@ -655,9 +655,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Nutzer-Interessen" filename="Subpatches\Nutzer-Interessen.v4p" componentmode="Hidden" id="239" nodename="Subpatches\Nutzer-Interessen.v4p">
-   <BOUNDS type="Node" left="9990" top="9630" width="1440" height="270">
+   <BOUNDS type="Node" left="9345" top="9465" width="1440" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9990" top="9630" width="4800" height="3600">
+   <BOUNDS type="Box" left="9345" top="9465" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="8244" top="1308" width="8016" height="6984">
    </BOUNDS>

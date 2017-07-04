@@ -151,7 +151,7 @@
    </PIN>
    <PIN pinname="Minimum" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Down" visible="1">
+   <PIN pinname="Down" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
@@ -174,28 +174,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Up">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="169">
-   <BOUNDS type="Box" left="7785" top="1116" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7785" top="1116" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Down">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -224,20 +202,10 @@
    </NODE>
    <LINK srcnodeid="171" srcpinname="Up Edge" dstnodeid="166" dstpinname="Up">
    </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="174">
-   <BOUNDS type="Node" left="8145" top="1776" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="174" srcpinname="Up Edge" dstnodeid="166" dstpinname="Down">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="175">
-   <BOUNDS type="Box" left="8793" top="1116" width="480" height="480">
+   <BOUNDS type="Box" left="8118" top="1581" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8793" top="1116" width="0" height="0">
+   <BOUNDS type="Node" left="8118" top="1581" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -279,7 +247,7 @@
    <LINK srcnodeid="198" srcpinname="Layer" dstnodeid="98" dstpinname="Input Node">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="199">
-   <BOUNDS type="Node" left="8805" top="636" width="100" height="100">
+   <BOUNDS type="Node" left="8130" top="1101" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -538,12 +506,10 @@
    </LINK>
    <LINK srcnodeid="167" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="169" srcpinname="Y Output Value" dstnodeid="174" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="308">
-   <BOUNDS type="Box" left="10635" top="2580" width="792" height="480">
+   <BOUNDS type="Box" left="10785" top="2580" width="792" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="10635" top="2580" width="0" height="0">
+   <BOUNDS type="Node" left="10785" top="2580" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
    </PIN>
@@ -709,7 +675,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8160" top="6585" width="15294" height="13824">
    </BOUNDS>
-   <BOUNDS type="Window" left="12825" top="1110" width="15135" height="13815">
+   <BOUNDS type="Window" left="360" top="1065" width="15135" height="13815">
    </BOUNDS>
    <PIN pinname="PointsXY" visible="1">
    </PIN>
@@ -731,11 +697,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12060" top="6585" width="12280" height="11568">
    </BOUNDS>
-   <BOUNDS type="Window" left="3525" top="2025" width="13665" height="11085">
+   <BOUNDS type="Window" left="6030" top="6210" width="13665" height="11085">
    </BOUNDS>
    <PIN pinname="PointsXY" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enable-State-3" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="494" srcpinname="Layer 1" dstnodeid="198" dstpinname="Layer 6">
@@ -789,5 +757,7 @@
    <LINK srcnodeid="483" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="494" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 5">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="494" dstpinname="Enable-State-3">
    </LINK>
    </PATCH>
