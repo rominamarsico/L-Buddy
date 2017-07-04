@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Interaction.v4p" systemname="Interaction" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Interaction.v4p" scrollx="0" scrolly="516">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Interaction.v4p" systemname="Interaction" filename="C:\Users\Romina\Documents\Hochschule\6.Semester\_P6\vvvv\L Buddy\Subpatches\Interaction.v4p" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2820" top="4404" width="480" height="480">
    </BOUNDS>
@@ -128,7 +128,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Down Edge" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="0" top="204" width="8292" height="12456">
+   <BOUNDS type="Window" left="3270" top="1590" width="8310" height="12450">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -453,17 +453,15 @@
    <LINK srcnodeid="84" srcpinname="Output 1" dstnodeid="81" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="85">
-   <BOUNDS type="Node" left="1395" top="8055" width="100" height="100">
+   <BOUNDS type="Node" left="1470" top="6720" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output 1" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="1395" top="8055">
+   <BOUNDS type="Box" left="1470" top="6720">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="85" srcpinname="Output 1" dstnodeid="82" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="28" srcpinname="Object Id" dstnodeid="85" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="84" dstpinname="Input 1">
@@ -535,5 +533,63 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="97" srcpinname="PositionXY" dstnodeid="43" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="99">
+   <BOUNDS type="Node" left="555" top="5415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="thema-nasa">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="255" top="5085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="thema-leben">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="101">
+   <BOUNDS type="Node" left="270" top="5775" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100" srcpinname="Input Value" dstnodeid="101" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Input Value" dstnodeid="101" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Sift (Value)" nodename="Sift (Value)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="270" top="6165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Filter" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="Output" dstnodeid="102" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="98">
+   <BOUNDS type="Node" left="540" top="6930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="102" srcpinname="Input Index" dstnodeid="98" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="85" srcpinname="Output 1" dstnodeid="98" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="85" srcpinname="Output 1" dstnodeid="82" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

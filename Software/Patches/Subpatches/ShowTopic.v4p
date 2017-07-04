@@ -157,9 +157,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="167">
-   <BOUNDS type="Box" left="7149" top="1116" width="480" height="480">
+   <BOUNDS type="Box" left="6900" top="675" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7149" top="1116" width="0" height="0">
+   <BOUNDS type="Node" left="6900" top="675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -504,8 +504,6 @@
    </NODE>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Switch">
    </LINK>
-   <LINK srcnodeid="167" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="308">
    <BOUNDS type="Box" left="10785" top="2580" width="792" height="480">
    </BOUNDS>
@@ -759,5 +757,29 @@
    <LINK srcnodeid="494" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 5">
    </LINK>
    <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="494" dstpinname="Enable-State-3">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="499">
+   <BOUNDS type="Node" left="7155" top="1380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="167" srcpinname="Y Output Value" dstnodeid="499" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="499" srcpinname="Output" dstnodeid="171" dstpinname="Input">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="500">
+   <BOUNDS type="Node" left="7470" top="675" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Befehl-weiter">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="500" srcpinname="Input Value" dstnodeid="499" dstpinname="Input 2">
    </LINK>
    </PATCH>
