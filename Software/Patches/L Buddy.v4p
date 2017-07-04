@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\L Buddy.v4p" systemname="L Buddy" filename="C:\Users\Romina\Documents\Hochschule\6. Semester\_P6\L Buddy.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1476" top="168" width="12180" height="13224">
+   <BOUNDS type="Window" left="1470" top="165" width="12405" height="14130">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -27,7 +27,7 @@
    </PIN>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="495" top="660" width="15375" height="14565">
+   <BOUNDS type="Window" left="495" top="660" width="15900" height="10110">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -763,22 +763,6 @@
    <LINK srcnodeid="119" srcpinname="Kinect/Mouse-Input" dstnodeid="239" dstpinname="PointsXY">
    </LINK>
    <LINK srcnodeid="119" srcpinname="Kinect/Mouse-Input" dstnodeid="115" dstpinname="PointsXY">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="245">
-   <BOUNDS type="Box" left="9984" top="7992" width="792" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9984" top="7992" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="119" srcpinname="Kinect/Mouse-Input" dstnodeid="245" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="LookAt (Transform)" nodename="LookAt (Transform)" componentmode="Hidden" id="265">
    <BOUNDS type="Node" left="1368" top="6576" width="100" height="100">
