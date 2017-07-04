@@ -27,7 +27,7 @@
    </PIN>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="180" top="432" width="15300" height="11508">
+   <BOUNDS type="Window" left="495" top="660" width="15375" height="14565">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
