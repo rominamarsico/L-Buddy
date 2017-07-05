@@ -544,18 +544,6 @@
    </NODE>
    <LINK srcnodeid="64" srcpinname="Up Edge" dstnodeid="70" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="7860" top="4590" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Time" slicecount="1" visible="1" values="9">
-   </PIN>
-   <PIN pinname="Set" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE id="62" systemname="FileStream (DShow9)" nodename="FileStream (DShow9)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Loop End Time" visible="1" slicecount="1" pintype="Input" values="76.79025">
    </PIN>
@@ -622,10 +610,6 @@
    <LINKPOINT x="11101" y="4650">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="62" dstpinname="Play">
-   </LINK>
-   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="72" dstpinname="Play">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="76" systemname="IOBox (String)">
    <BOUNDS type="Node" left="7830" top="435" width="1305" height="270">
    </BOUNDS>
@@ -642,8 +626,10 @@
    <PIN pinname="Size" slicecount="1" values="10">
    </PIN>
    </NODE>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Set">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="72" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Play">
    </LINK>
    </PATCH>

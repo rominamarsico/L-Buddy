@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Sprachsteuerung.v4p" systemname="Sprachsteuerung" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Sprachsteuerung.v4p" scrollx="17715" scrolly="7095">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Sprachsteuerung.v4p" systemname="Sprachsteuerung" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Sprachsteuerung.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="13875" top="5565" width="14640" height="9600">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -2125,7 +2125,7 @@
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="224">
    <BOUNDS type="Node" left="3855" top="12360" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" values="Befehl-" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="Befehl-">
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>

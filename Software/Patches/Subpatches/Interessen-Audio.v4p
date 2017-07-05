@@ -144,20 +144,6 @@
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="900" top="2985" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Time" slicecount="1" values="12">
-   </PIN>
-   <PIN pinname="Set" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Set">
-   </LINK>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Input">
    </LINK>
    <NODE id="1" systemname="FileStream (DShow9)" nodename="FileStream (DShow9)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
@@ -226,8 +212,8 @@
    <LINKPOINT x="4141" y="3045">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="1" dstpinname="Play">
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Play">
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="10" dstpinname="Play">
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Play">
    </LINK>
    </PATCH>
