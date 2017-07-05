@@ -219,7 +219,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="3615" top="2895" width="100" height="100">
+   <BOUNDS type="Node" left="3615" top="3495" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Up Edge" visible="1">
    </PIN>
@@ -245,9 +245,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
-   <BOUNDS type="Box" left="3615" top="2220" width="480" height="480">
+   <BOUNDS type="Box" left="3615" top="2820" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3615" top="2220" width="0" height="0">
+   <BOUNDS type="Node" left="3615" top="2820" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -435,7 +435,7 @@
    <LINK srcnodeid="36" srcpinname="Input Value" dstnodeid="35" dstpinname="Input 2">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="6315" top="3345" width="100" height="100">
+   <BOUNDS type="Node" left="6315" top="3795" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Up Edge" visible="1">
    </PIN>
@@ -463,9 +463,9 @@
    <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
-   <BOUNDS type="Box" left="6300" top="2670" width="480" height="480">
+   <BOUNDS type="Box" left="6300" top="3120" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6300" top="2670" width="0" height="0">
+   <BOUNDS type="Node" left="6300" top="3120" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -556,18 +556,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="3900" top="3270" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="Befehl-zurück">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="27" srcpinname="Output 1" dstnodeid="32" dstpinname="Input 2">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="900" top="3120" width="100" height="100">
+   <BOUNDS type="Node" left="900" top="3420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Befehl-intro">
    </PIN>
@@ -577,50 +569,6 @@
    <LINK srcnodeid="47" srcpinname="Input Value" dstnodeid="32" dstpinname="Input 3">
    </LINK>
    <LINK srcnodeid="47" srcpinname="Input Value" dstnodeid="41" dstpinname="Input 3">
-   </LINK>
-   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="3615" top="3600" width="360" height="270">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="22" srcpinname="Up Edge" dstnodeid="48" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Input Value" dstnodeid="48" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="Output" dstnodeid="21" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="50">
-   <BOUNDS type="Node" left="6615" top="3720" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="Befehl-weiter">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="6315" top="4050" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="50" srcpinname="Input Value" dstnodeid="49" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Up Edge" dstnodeid="49" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="37" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="51">
    <BOUNDS type="Node" left="4275" top="5715" width="100" height="100">
@@ -637,5 +585,9 @@
    <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input 5">
    </LINK>
    <LINK srcnodeid="51" srcpinname="Input Value" dstnodeid="17" dstpinname="Input 4">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Up Edge" dstnodeid="21" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Up Edge" dstnodeid="37" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

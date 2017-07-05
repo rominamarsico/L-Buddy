@@ -155,7 +155,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4365" top="11760" width="6468" height="4108">
    </BOUNDS>
-   <BOUNDS type="Window" left="1950" top="5700" width="11505" height="5850">
+   <BOUNDS type="Window" left="2520" top="8625" width="11505" height="5850">
    </BOUNDS>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -179,9 +179,9 @@
    </PIN>
    <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 7" visible="1">
+   <PIN pinname="Layer 7" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 8" visible="1">
+   <PIN pinname="Layer 8" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 9" visible="1" slicecount="1" values="||">
    </PIN>
@@ -355,7 +355,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7275" top="3555" width="9660" height="7416">
    </BOUNDS>
-   <BOUNDS type="Window" left="14475" top="5535" width="11430" height="7755">
+   <BOUNDS type="Window" left="12870" top="5745" width="11355" height="7755">
    </BOUNDS>
    <PIN pinname="Layer-Kinect" visible="1">
    </PIN>
@@ -372,6 +372,8 @@
    <PIN pinname="Enable Skeleton" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Joint PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="193" srcpinname="Layer-Kinect" dstnodeid="125" dstpinname="Layer 1 Kinect" linkstyle="PolyLine">
@@ -485,7 +487,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6300" top="10155" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="19140" top="4830" width="7860" height="7035">
+   <BOUNDS type="Window" left="12105" top="4770" width="7860" height="7035">
    </BOUNDS>
    <PIN pinname="Layer-Chess" visible="1">
    </PIN>
@@ -499,7 +501,7 @@
    <LINK srcnodeid="202" srcpinname="Layer-Halo-Dot" dstnodeid="201" dstpinname="Layer 3 Pass">
    </LINK>
    <NODE systemname="Renderer-Kinect" filename="Subpatches\Renderer-Kinect.v4p" componentmode="Hidden" id="203" nodename="Subpatches\Renderer-Kinect.v4p">
-   <BOUNDS type="Node" left="7275" top="11760" width="100" height="100">
+   <BOUNDS type="Node" left="7275" top="11760" width="1995" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="7275" top="11760" width="4800" height="3600">
    </BOUNDS>
@@ -509,14 +511,14 @@
    </PIN>
    <PIN pinname="Layer 1 Kinect" visible="1">
    </PIN>
-   <PIN pinname="Layer 2 Kinect" visible="1">
+   <PIN pinname="Layer 2 Kinect" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 3 Kinect" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="193" srcpinname="Perspective" dstnodeid="203" dstpinname="View" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="193" srcpinname="Layer-Kinect" dstnodeid="203" dstpinname="Layer 1 Kinect" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="193" srcpinname="Layer-Skeleton" dstnodeid="203" dstpinname="Layer 2 Kinect" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="204">
    <BOUNDS type="Node" left="7260" top="12345" width="100" height="100">
@@ -534,22 +536,6 @@
    </LINK>
    <LINK srcnodeid="172" srcpinname="ShowTopic" dstnodeid="115" dstpinname="Enable-State 3" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="193" srcpinname="Layer-Skeleton" dstnodeid="125" dstpinname="Layer 8" linkstyle="VHV">
-   <LINKPOINT x="8835" y="11400">
-   </LINKPOINT>
-   <LINKPOINT x="6165" y="11400">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="202" srcpinname="Layer-Grid" dstnodeid="125" dstpinname="Layer 7">
-   </LINK>
-   <LINK srcnodeid="115" srcpinname="Layer-Space" dstnodeid="125" dstpinname="Layer 6">
-   </LINK>
-   <LINK srcnodeid="115" srcpinname="Layer-Background" dstnodeid="125" dstpinname="Layer 5" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="127" srcpinname="Layer-Karten" dstnodeid="125" dstpinname="Layer 4" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="127" srcpinname="Layer-Background" dstnodeid="125" dstpinname="Layer 3">
-   </LINK>
    <LINK srcnodeid="176" srcpinname="Layer-Avatar" dstnodeid="125" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="Gestures" filename="Subpatches\Gestures.v4p" componentmode="Hidden" id="213" nodename="Subpatches\Gestures.v4p">
@@ -557,15 +543,17 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9210" top="4005" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2160" top="708" width="11220" height="13224">
+   <BOUNDS type="Window" left="825" top="630" width="13710" height="14310">
    </BOUNDS>
    <PIN pinname="Joint Position xyz" visible="1">
    </PIN>
    <PIN pinname="Swipe-Zurück" visible="1">
    </PIN>
-   <PIN pinname="Geste-Weiter" visible="1">
+   <PIN pinname="Geste-Weiter" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Geste-Zurück" visible="1">
+   <PIN pinname="Geste-Zurück" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="193" srcpinname="Joint PositionXYZ" dstnodeid="213" dstpinname="Joint Position xyz">
@@ -633,7 +621,7 @@
    <LINK srcnodeid="200" srcpinname="F2-Retrigger" dstnodeid="176" dstpinname="Reset">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="237">
-   <BOUNDS type="Node" left="10872" top="6276" width="100" height="100">
+   <BOUNDS type="Node" left="10872" top="6426" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -659,7 +647,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9345" top="9465" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="19305" top="1335" width="8010" height="6975">
+   <BOUNDS type="Window" left="13965" top="7485" width="7890" height="6975">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -675,9 +663,9 @@
    </PIN>
    <PIN pinname="Timer" visible="1">
    </PIN>
+   <PIN pinname="F2" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="239" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 9">
-   </LINK>
    <LINK srcnodeid="200" srcpinname="F2-Retrigger" dstnodeid="239" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="239" srcpinname="Themen-Auswahl" dstnodeid="238" dstpinname="Interessen-Auswahl">
@@ -725,7 +713,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="243">
-   <BOUNDS type="Node" left="10872" top="7392" width="100" height="100">
+   <BOUNDS type="Node" left="10872" top="7242" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -765,9 +753,9 @@
    <LINK srcnodeid="119" srcpinname="Kinect/Mouse-Input" dstnodeid="115" dstpinname="PointsXY">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="267">
-   <BOUNDS type="Box" left="11400" top="8115" width="480" height="480">
+   <BOUNDS type="Box" left="11535" top="7665" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="11400" top="8115" width="0" height="0">
+   <BOUNDS type="Node" left="11535" top="7665" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -779,5 +767,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="243" srcpinname="Down Edge" dstnodeid="267" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="127" srcpinname="Layer-Karten" dstnodeid="125" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="213" srcpinname="Layer" dstnodeid="203" dstpinname="Layer 3 Kinect">
+   </LINK>
+   <LINK srcnodeid="193" srcpinname="Layer-Skeleton" dstnodeid="203" dstpinname="Layer 2 Kinect">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Layer-Space" dstnodeid="125" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="202" srcpinname="Layer-Grid" dstnodeid="125" dstpinname="Layer 5">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="213" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 9">
+   </LINK>
+   <LINK srcnodeid="172" srcpinname="Start" dstnodeid="239" dstpinname="F2">
    </LINK>
    </PATCH>

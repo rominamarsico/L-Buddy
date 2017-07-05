@@ -2,12 +2,12 @@
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Renderer-Kinect.v4p" systemname="Renderer-Kinect" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Renderer-Kinect.v4p">
    <BOUNDS type="Window" left="5085" top="6015" width="7665" height="4950">
    </BOUNDS>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="5">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="5">
    <BOUNDS type="Node" left="1065" top="3525" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1065" top="3525" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="14445" top="180" width="5745" height="4560">
+   <BOUNDS type="Window" left="21345" top="255" width="5745" height="4560">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Kinect">
    </PIN>
@@ -104,4 +104,16 @@
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="6">
+   <BOUNDS type="Box" left="3705" top="630" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3705" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer 3 Kinect|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="4" dstpinname="Layer 3">
+   </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Globals.v4p" systemname="Globals" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Globals.v4p">
-   <BOUNDS type="Window" left="4155" top="4440" width="8910" height="8640">
+   <BOUNDS type="Window" left="3276" top="1116" width="8904" height="8640">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

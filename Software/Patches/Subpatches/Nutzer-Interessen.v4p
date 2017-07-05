@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Nutzer-Interessen.v4p" systemname="Nutzer-Interessen" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Nutzer-Interessen.v4p">
-   <BOUNDS type="Window" left="21225" top="3705" width="8025" height="6990">
+   <BOUNDS type="Window" left="13965" top="7485" width="7890" height="6975">
    </BOUNDS>
    <NODE systemname="Change-State-Interessen" filename="Change-State-Interessen.v4p" componentmode="Hidden" id="0" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Change-State-Interessen.v4p">
    <BOUNDS type="Node" left="1230" top="1905" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1230" top="1905" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="13815" top="6345" width="9555" height="7770">
+   <BOUNDS type="Window" left="3510" top="3585" width="9555" height="7770">
    </BOUNDS>
    <PIN pinname="Point Hit" visible="1" slicecount="1" values="0">
    </PIN>
@@ -32,7 +32,7 @@
    <PIN pinname="Output 3" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Automata-Interessen" filename="Automata-Interessen.v4p" componentmode="InAWindow" id="1" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Automata-Interessen.v4p">
+   <NODE systemname="Automata-Interessen" filename="Automata-Interessen.v4p" componentmode="Hidden" id="1" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Automata-Interessen.v4p">
    <BOUNDS type="Node" left="1245" top="2910" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1245" top="2910" width="4800" height="3600">
@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1260" top="3990" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="1200" top="810" width="10125" height="12960">
+   <BOUNDS type="Window" left="540" top="1830" width="13740" height="12960">
    </BOUNDS>
    <PIN pinname="Enable-State-1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -88,6 +88,8 @@
    <PIN pinname="Objekt ID" visible="1">
    </PIN>
    <PIN pinname="State-3" visible="1">
+   </PIN>
+   <PIN pinname="F2" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Interessen-Auswahl" filename="Interessen-Auswahl.v4p" componentmode="Hidden" id="3" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Interessen-Auswahl.v4p">
@@ -157,9 +159,9 @@
    <LINK srcnodeid="2" srcpinname="Transform Out 1" dstnodeid="3" dstpinname="Transform 1">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Enable-State-1" dstnodeid="0" dstpinname="Enable-State-1">
-   <LINKPOINT x="540" y="3415">
+   <LINKPOINT x="540" y="3420">
    </LINKPOINT>
-   <LINKPOINT x="630" y="1085">
+   <LINKPOINT x="435" y="1350">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1" srcpinname="Enable-State-2" dstnodeid="0" dstpinname="Input 2">
@@ -293,5 +295,37 @@
    <LINK srcnodeid="3" srcpinname="Object Id" dstnodeid="2" dstpinname="Objekt ID">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Enable-State-3" dstnodeid="2" dstpinname="State-3">
+   </LINK>
+   <NODE systemname="Interessen-Audio" filename="Interessen-Audio.v4p" componentmode="Hidden" id="11" nodename="Interessen-Audio.v4p">
+   <BOUNDS type="Node" left="405" top="5310" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="405" top="5310" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10125" top="4230" width="5565" height="6480">
+   </BOUNDS>
+   <PIN pinname="Input - Play" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Enable-State-1" dstnodeid="11" dstpinname="Input - Play">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="780" top="615" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="780" top="615" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="F2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="2" dstpinname="F2">
    </LINK>
    </PATCH>

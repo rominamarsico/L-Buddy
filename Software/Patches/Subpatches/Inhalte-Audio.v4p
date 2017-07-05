@@ -21,7 +21,7 @@
    </BOUNDS>
    <PIN pinname="Audio" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="..\..\Assets\Sprache\Neil_Armstrong_small_step.wav">
+   <PIN pinname="Filename" slicecount="1" values="..\..\Assets\Sprache\Neil_Armstrong_small_step.wav" visible="1">
    </PIN>
    <PIN pinname="Play" slicecount="1" visible="1" values="0">
    </PIN>
@@ -575,5 +575,23 @@
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="17" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="49">
+   <BOUNDS type="Box" left="6030" top="9195" width="1545" height="285">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6030" top="9195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\Assets\Audio\Neil_Armstrong_small_step.wav">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.avi">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Streams (*.aif, *.avi, *.avs, *.mid, *.mka, *.mkv, *.mov, *.mpg, *.ogg, *.rm, *.wmv, *.mp3, *.wav, *.wma)||*.aif;*.aiff;*.avi;*.avs;*.mov;*.mpg;*.mka;*.mkv;*.mpeg;*.ogg;*.rm;*.wmv;*.mid;*.wma;*.mp3;*.wav||AVI (*.avi)||*.avi||AviSynth (*.avs)||*.avs||Quicktime (*.mov, *.aif)||*.mov;*.aif;*.aiff||Ogg Media (*.ogg)||*.ogg||Matroska (*.mka, *.mkv)||*.mka;*.mkv||RealMedia (*.rm)||*.rm||WindowsMedia (*.wmv, *.wma)||*.wmv;*.wma||MIDI (*.mid)||*.mid||MPEG (*.mpg, *.mpeg)||*.mpg;*.mpeg||MP3 (*.mp3)||*.mp3||Wave (*.wav)||*.wav|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output String" dstnodeid="1" dstpinname="Filename">
    </LINK>
    </PATCH>
