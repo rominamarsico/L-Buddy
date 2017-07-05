@@ -10,7 +10,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="495" top="660" width="15900" height="10110">
+   <BOUNDS type="Window" left="7050" top="5490" width="14835" height="10110">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -55,9 +55,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="98">
-   <BOUNDS type="Box" left="7341" top="8304" width="795" height="240">
+   <BOUNDS type="Box" left="7491" top="8289" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7341" top="8304" width="0" height="0">
+   <BOUNDS type="Node" left="7491" top="8289" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer-Space">
    </PIN>
@@ -223,15 +223,15 @@
    <LINK srcnodeid="175" srcpinname="Y Output Value" dstnodeid="166" dstpinname="Reset">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="198">
-   <BOUNDS type="Node" left="7341" top="7908" width="2955" height="270">
+   <BOUNDS type="Node" left="7491" top="7893" width="2085" height="270">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
-   <PIN pinname="Layer Template Count" slicecount="1" values="7">
+   <PIN pinname="Layer Template Count" slicecount="1" values="6">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -484,14 +484,6 @@
    </NODE>
    <LINK srcnodeid="429" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Space" filename="Space.v4p" nodename="Space.v4p" componentmode="Hidden" id="481">
-   <BOUNDS type="Node" left="2145" top="1185" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2145" top="1185" width="10843" height="11541">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2370" top="2520" width="9870" height="10560">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Inhalte-Text" filename="Inhalte-Text.v4p" nodename="Inhalte-Text.v4p" componentmode="Hidden" id="482">
    <BOUNDS type="Node" left="6120" top="6585" width="0" height="0">
    </BOUNDS>
@@ -501,12 +493,12 @@
    </BOUNDS>
    <PIN pinname="Enable-State-3" visible="1">
    </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="482" dstpinname="Enable-State-3">
    </LINK>
    <LINK srcnodeid="166" srcpinname="Output" dstnodeid="482" dstpinname="Counter">
-   </LINK>
-   <LINK srcnodeid="482" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="100" srcpinname="Output" dstnodeid="482" dstpinname="AvoidNil-KarteNr">
    </LINK>
@@ -553,10 +545,10 @@
    </PIN>
    <PIN pinname="Enable-State-3" visible="1">
    </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="166" srcpinname="Output" dstnodeid="487" dstpinname="Counter">
-   </LINK>
-   <LINK srcnodeid="487" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="487" dstpinname="Enable-State-3">
    </LINK>
@@ -578,8 +570,6 @@
    <PIN pinname="Enable-State-3" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="494" srcpinname="Layer 1" dstnodeid="198" dstpinname="Layer 6">
-   </LINK>
    <LINK srcnodeid="308" srcpinname="Y Output Value" dstnodeid="494" dstpinname="PointsXY" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="494" dstpinname="Karten-Nummer">
@@ -597,10 +587,10 @@
    </PIN>
    <PIN pinname="Counter" visible="1">
    </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="498" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="498" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="214" srcpinname="Transform Out" dstnodeid="498" dstpinname="Transform">
    </LINK>
@@ -613,10 +603,6 @@
    <LINK srcnodeid="166" srcpinname="Output" dstnodeid="498" dstpinname="Counter">
    </LINK>
    <LINK srcnodeid="166" srcpinname="Output" dstnodeid="232" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="483" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 4">
-   </LINK>
-   <LINK srcnodeid="494" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 5">
    </LINK>
    <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="494" dstpinname="Enable-State-3">
    </LINK>
@@ -643,5 +629,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="500" srcpinname="Input Value" dstnodeid="499" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="494" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="483" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 5">
+   </LINK>
+   <LINK srcnodeid="487" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="482" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="498" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 2">
    </LINK>
    </PATCH>

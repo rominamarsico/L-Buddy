@@ -419,7 +419,7 @@
    <NODE systemname="Constant-RM (EX9.Effect)" nodename="Constant-RM (EX9.Effect)" componentmode="Hidden" id="10" filename="..\..\..\..\..\Hochschule\6.Semester\vvvv\_P6\P6-tests\effects\Constant-RM.fx">
    <BOUNDS type="Node" left="465" top="5040" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Mesh" visible="1">
+   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
@@ -428,13 +428,7 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="33" srcpinname="Mesh" dstnodeid="10" dstpinname="Mesh">
-   </LINK>
    <LINK srcnodeid="32" srcpinname="Render State Out" dstnodeid="10" dstpinname="Render State">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="15" dstpinname="Layers">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1392" top="6777" width="480" height="480">
@@ -491,9 +485,17 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Texture">
    </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="67" srcpinname="Output Node" dstnodeid="10" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="15" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Mesh" dstnodeid="10" dstpinname="Mesh">
    </LINK>
    </PATCH>

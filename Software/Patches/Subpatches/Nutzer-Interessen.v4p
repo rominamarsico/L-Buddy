@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Nutzer-Interessen.v4p" systemname="Nutzer-Interessen" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Nutzer-Interessen.v4p">
-   <BOUNDS type="Window" left="13965" top="7485" width="7890" height="6975">
+   <BOUNDS type="Window" left="3720" top="4095" width="7890" height="6975">
    </BOUNDS>
    <NODE systemname="Change-State-Interessen" filename="Change-State-Interessen.v4p" componentmode="Hidden" id="0" nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Change-State-Interessen.v4p">
    <BOUNDS type="Node" left="1230" top="1905" width="100" height="100">
@@ -301,7 +301,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="405" top="5310" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10125" top="4230" width="5565" height="6480">
+   <BOUNDS type="Window" left="10125" top="4230" width="5970" height="6480">
    </BOUNDS>
    <PIN pinname="Input - Play" visible="1">
    </PIN>

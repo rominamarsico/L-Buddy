@@ -68,7 +68,7 @@
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="1" dstpinname="Layer 3">
    </LINK>
-   <BOUNDS type="Window" left="2520" top="8625" width="11505" height="5850">
+   <BOUNDS type="Window" left="2025" top="5715" width="11505" height="5850">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -183,7 +183,11 @@
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
    </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="EX9 Out" dstnodeid="29" dstpinname="Source">
