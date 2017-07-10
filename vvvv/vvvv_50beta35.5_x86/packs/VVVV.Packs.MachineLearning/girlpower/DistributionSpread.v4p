@@ -1,0 +1,649 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha33.8.dtd" >
+   <PATCH nodename="C:\vvvv\git\VVVV.Packs.MachineLearning\girlpower\DistributionSpread.v4p" scrollx="360" scrolly="315" systemname="DistributionSpread" filename="C:\vvvv\git\VVVV.Packs.MachineLearning\girlpower\DistributionSpread.v4p">
+   <BOUNDS type="Window" left="4650" top="1560" width="14055" height="12435">
+   </BOUNDS>
+   <PACK Name="Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.8.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6525" top="3600" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6525" top="3600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Generate">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="2745" top="8670" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2745" top="8670" width="3345" height="3090">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12450" top="9630" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2910" top="6570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" visible="1">
+   </PIN>
+   <PIN pinname="ScaleY" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="GridSegment (DX9)" nodename="GridSegment (DX9)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2760" top="7050" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Resolution X" slicecount="1" values="15">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Transform Out" dstnodeid="5" dstpinname="Transform">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3690" top="6165" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3690" top="6165" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="4" dstpinname="ScaleX">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="4" dstpinname="ScaleY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2700" top="4455" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2700" top="4455" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="500">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Spread Count|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1995" top="3435" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1995" top="3435" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Standard Deviation|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4605" top="3675" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4605" top="3675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Standard Deviation|">
+   </PIN>
+   </NODE>
+   <NODE systemname="DistributionSpread (ML.Statistics Distribution Univariate)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="DistributionSpread (ML.Statistics Distribution Univariate)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1425" top="5235" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Distribution" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Generate" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="100">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1425" top="5235">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Generate">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="4" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Spread Count">
+   </LINK>
+   <NODE systemname="DistributionSpread (ML.Statistics Distribution Univariate)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="DistributionSpread (ML.Statistics Distribution Univariate)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="4035" top="5235" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Distribution" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Generate" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="100">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="4035" top="5235">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="4" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Generate">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Spread Count">
+   </LINK>
+   <NODE systemname="GridSegment (DX9)" nodename="GridSegment (DX9)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="5445" top="7110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Resolution X" slicecount="1" values="15">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5955" top="6240" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5955" top="6240" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.11">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="5595" top="6720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" visible="1">
+   </PIN>
+   <PIN pinname="ScaleY" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateXY" visible="1" slicecount="1000" values="-0.704117059707642,0.454419761896133,-0.497897416353226,0.340676575899124,-0.62388688325882,0.00699102832004428,-0.591717302799225,-0.0305765252560377,0.494966864585876,-0.0333441905677319,-2.10281753540039,-1.33430564403534,0.337509453296661,-0.290452182292938,-0.229581698775291,-1.21865832805634,0.610069036483765,-0.205470994114876,0.420404434204102,-1.62730872631073,0.327628970146179,0.485007494688034,-1.62190771102905,0.122985668480396,-0.984542071819305,-0.494660049676895,0.148413047194481,-1.70457077026367,-0.793354034423828,-0.308858931064606,0.153878211975098,-0.316610187292099,0.300709068775177,0.394015967845917,-0.40657439827919,0.915671527385712,0.159115269780159,-0.0751319825649261,0.57127434015274,-2.73927521705627,0.241771891713142,2.28934383392334,-0.54709267616272,0.800243139266968,-0.998293817043304,-0.245453462004662,-0.0657167285680771,1.0087867975235,1.63547682762146,2.91007351875305,-0.987328469753265,1.24594151973724,-1.22104811668396,-0.749401569366455,-2.08033084869385,0.148336008191109,-2.27176690101624,-1.88639116287231,-0.418935924768448,0.737077534198761,0.673739016056061,1.78732454776764,0.208889707922935,-0.0444327592849731,0.323599278926849,0.149323403835297,-0.378814965486526,-1.23487150669098,0.186878815293312,-0.345079213380814,0.686964988708496,0.219139471650124,1.57866656780243,1.50091361999512,-0.288970589637756,-1.48029243946075,0.236834704875946,-1.70553290843964,0.530343294143677,0.450828969478607,-1.83165037631989,0.587903201580048,0.567119717597961,2.48883628845215,0.471380770206451,0.727974832057953,-1.27464020252228,1.70550727844238,1.59749722480774,1.27020502090454,-1.76732492446899,-2.27274060249329,0.301877647638321,-0.780449688434601,-1.11710727214813,-0.0186183303594589,0.955220699310303,-0.759760439395905,-1.20174968242645,-0.996345221996307,0.73889297246933,0.753768682479858,-0.337348967790604,1.54507660865784,0.828935742378235,0.399941027164459,-0.254747182130814,1.16243803501129,0.381756365299225,-0.857196986675262,-0.333392053842545,0.37668439745903,0.287647873163223,0.185235440731049,-1.05539429187775,-0.61066347360611,-1.38573467731476,-1.38321900367737,1.71145224571228,-1.83451020717621,-0.861554145812988,-0.36410853266716,2.72915458679199,0.837115883827209,0.104183487594128,0.389977782964706,1.5484561920166,0.300847321748734,1.73805379867554,0.211233615875244,-0.239537253975868,0.513610780239105,-2.29118275642395,0.518891930580139,-0.79967474937439,0.364405065774918,1.6836451292038,-1.21189725399017,-1.30552017688751,-0.215319842100143,-1.33455646038055,-0.258161276578903,2.73023724555969,1.3002210855484,-1.17519891262054,-0.20392706990242,-0.443931400775909,-0.719658732414246,-0.200638443231583,-0.436308264732361,1.51269793510437,-0.142088934779167,0.267349779605865,1.31130313873291,0.169966265559196,-0.557732820510864,-0.833626687526703,-1.06385886669159,0.995439469814301,-0.182230189442635,1.52054679393768,0.240573212504387,-0.692522287368774,-0.562537312507629,-1.55355775356293,2.80608344078064,-1.80646431446075,1.21583020687103,0.267974346876144,-1.89162480831146,0.764250516891479,-1.02865540981293,1.795166015625,-0.632834434509277,1.2581832408905,0.766033947467804,0.316905677318573,-0.450839430093765,-0.830177664756775,-2.62806248664856,-1.09521102905273,-2.36063098907471,-0.0174378473311663,0.489285260438919,1.33384323120117,-1.84453928470612,-0.378947466611862,0.596548497676849,-0.645485639572144,-0.517948627471924,-1.18025231361389,-1.00796949863434,-0.293281614780426,-0.695790112018585,1.54322361946106,-0.949177622795105,-1.11144614219666,0.742078840732574,-0.3005031645298,1.3381450176239,-0.246867030858994,1.0028395652771,0.0124094402417541,-1.47006726264954,0.538684725761414,1.0371835231781,1.30221891403198,-1.0179443359375,-0.16590091586113,0.105305872857571,1.62234556674957,0.0683166310191154,2.17856621742249,-0.477295964956284,-0.763038158416748,0.26528587937355,-1.71668303012848,0.0859135538339615,-0.596150100231171,1.20757126808167,-0.0795835554599762,2.09764623641968,-0.141443490982056,-0.864823043346405,-0.625397384166718,0.581008076667786,0.0473920330405235,-0.365427404642105,-1.29117715358734,-1.68667507171631,0.466442555189133,-1.30031597614288,-1.04537260532379,-0.647401750087738,-0.47468227148056,1.04976260662079,-1.2071475982666,0.0923005789518356,0.254228860139847,1.27830600738525,-0.213090240955353,-1.48634123802185,-0.233509436249733,-0.785772979259491,1.6287430524826,1.23806607723236,0.7586430311203,0.990522682666779,-1.59215915203094,1.43285238742828,-0.79943436384201,-0.460447788238525,0.524076282978058,0.140321418642998,-0.602714121341705,0.186205968260765,0.132570400834084,1.27431917190552,0.546069324016571,1.30804061889648,-1.71960890293121,-0.529795587062836,-0.446912676095963,1.04437756538391,-1.10283803939819,0.684094965457916,-0.642868101596832,-0.623937666416168,0.294206559658051,-0.552292168140411,-1.00968515872955,-0.343727201223373,-1.66676366329193,-1.65070962905884,0.509017050266266,2.42549657821655,0.594815492630005,-1.17598474025726,0.426058799028397,0.856447398662567,1.67783761024475,-0.110721364617348,-0.648894309997559,0.457090884447098,0.259890973567963,1.33093667030334,-0.0742643922567368,-1.31278204917908,0.246462151408195,0.344310253858566,0.460101991891861,-0.526119709014893,-1.10576832294464,-0.314841866493225,-1.13653111457825,0.612779200077057,-1.23508703708649,-0.368680655956268,1.21383762359619,0.147001519799232,1.63008773326874,0.00890956353396177,-0.380759000778198,0.21875624358654,1.18306970596313,-0.522905170917511,0.478260368108749,-2.01783394813538,-0.122457034885883,-0.501563191413879,-0.757251501083374,-1.06761062145233,1.5311381816864,0.0311689637601376,0.672876834869385,0.529575824737549,-0.429995954036713,1.4491423368454,1.00855028629303,0.363704651594162,1.30069184303284,-1.00312125682831,-0.828576147556305,1.4477014541626,2.32115435600281,-0.100508444011211,1.41345322132111,1.38275134563446,1.8177478313446,1.21201944351196,-0.228754699230194,-1.03636038303375,-0.826244950294495,-0.151619866490364,0.0438893549144268,1.33235478401184,0.946054935455322,0.264688611030579,-0.903178632259369,-0.167197987437248,0.391429722309113,-0.768245041370392,0.793111801147461,0.641463398933411,-0.230530381202698,-0.690194725990295,1.60902774333954,0.473685443401337,-0.269541084766388,0.656965315341949,0.620738208293915,0.910816669464111,0.408176481723785,-0.114195302128792,1.0922554731369,0.507212698459625,0.371855169534683,1.3989417552948,0.214640989899635,0.545087099075317,-1.11453413963318,-1.2327995300293,0.85855507850647,0.354847311973572,0.082217738032341,-0.33379191160202,0.140081241726875,-1.41497123241425,0.037951722741127,-0.187720119953156,-0.995780766010284,-0.848084151744843,-0.553813517093658,-1.03035640716553,1.93889701366425,0.339420258998871,1.52134597301483,1.67738389968872,-0.275547474622726,-0.207993656396866,-0.94663804769516,-0.0645728185772896,-0.59537535905838,-0.469844937324524,-0.532666742801666,1.43158948421478,-0.109640784561634,-0.55479770898819,0.196852058172226,-0.0850048363208771,-2.36902451515198,0.155034944415092,-1.03728175163269,0.0734536200761795,-1.571173787117,-0.942020118236542,-0.730293154716492,0.309007674455643,-0.40969654917717,-0.779425263404846,-2.0881564617157,0.175019904971123,0.327732980251312,-0.45847100019455,-1.32903027534485,-0.46399313211441,-0.128493875265121,-2.41542792320251,-1.10977959632874,2.10318470001221,2.43631672859192,-0.211582720279694,-1.59486865997314,-0.614854574203491,1.26079785823822,0.603800535202026,1.30773913860321,0.46498429775238,0.626441180706024,-1.67308008670807,-1.3599716424942,0.517021596431732,-1.42493438720703,1.29424703121185,0.676212966442108,0.228412434458733,0.894094228744507,-1.14155304431915,-2.78148460388184,-0.0221514888107777,-0.759523808956146,-0.463809967041016,0.432832896709442,0.404069513082504,1.92607307434082,1.49201107025146,-0.504268050193787,-0.869587182998657,-0.656447410583496,0.149624586105347,-1.46927857398987,1.14454925060272,-0.252933740615845,0.408788084983826,2.36075305938721,-0.546676516532898,0.69379723072052,0.378579080104828,0.0720974951982498,-0.581502556800842,-0.511133432388306,-0.815101206302643,-0.498375207185745,-2.16413688659668,0.59100878238678,-0.21622696518898,-1.72783374786377,-0.0697939842939377,0.936403036117554,-2.30684852600098,0.809086680412292,0.564696133136749,-0.0254719834774733,-0.104037016630173,1.49407505989075,-0.82825243473053,-0.565456211566925,0.466443091630936,0.901464462280273,0.774479866027832,-0.797211468219757,0.494850993156433,2.62852215766907,-0.954437911510468,0.318916231393814,-0.874771654605865,0.304555654525757,0.685635387897491,1.87598657608032,0.46105745434761,0.802749693393707,1.43627488613129,-1.11163830757141,-0.74811464548111,-1.17937386035919,-2.75878381729126,-0.888501763343811,-1.19872570037842,1.07103657722473,1.43882298469543,0.495788067579269,-1.68063807487488,-0.920878708362579,-0.687701404094696,0.528174817562103,0.769036114215851,-0.232151210308075,0.773259818553925,-0.397724062204361,-0.164348721504211,-0.511708974838257,-0.805159211158752,-2.01715612411499,-0.863298058509827,1.71889162063599,-2.21466708183289,-1.2563157081604,0.755408585071564,0.263116091489792,0.869538724422455,0.531067490577698,1.64163589477539,-0.304491460323334,0.820291697978973,0.716677188873291,-0.243788450956345,1.12384974956512,0.59925901889801,1.67250967025757,-0.849850237369537,0.048931859433651,-0.166973412036896,-0.621172666549683,1.06168389320374,-1.19461488723755,0.262021541595459,-0.744721412658691,-0.135431587696075,-0.512671768665314,0.568998277187347,2.07348418235779,-0.389207988977432,-1.81104588508606,1.06408059597015,-0.137884795665741,1.57121694087982,-0.034536324441433,-0.208016112446785,-0.188848569989204,-1.74924492835999,-0.918693542480469,-0.232545405626297,0.306373566389084,0.87763637304306,0.228045776486397,-1.88634753227234,1.91788649559021,0.823806464672089,-0.163880243897438,-1.11210405826569,-1.18381798267365,0.949329853057861,0.333385527133942,-1.32177436351776,0.800923705101013,1.13289797306061,0.348791658878326,-2.01099610328674,-0.118207976222038,0.877094447612762,-1.51972389221191,-1.37815034389496,0.910424470901489,-1.60894525051117,0.0178896822035313,0.217920884490013,0.112202756106853,-0.63584291934967,-0.593775451183319,0.964169263839722,-0.620420157909393,0.559138000011444,0.577688872814178,-0.203137829899788,-0.712897181510925,-1.92983913421631,-0.210766494274139,-2.23931860923767,0.704223394393921,-1.08116126060486,-2.09862184524536,0.0365945436060429,0.662052631378174,0.134194657206535,1.19128024578094,0.838322818279266,0.336833924055099,-1.37300252914429,-0.937720537185669,0.725365459918976,0.0311185847967863,-1.15305984020233,1.27781701087952,-1.0558899641037,-0.439575761556625,-0.0422408543527126,-1.28752756118774,-0.50155371427536,-0.928078770637512,0.0472875274717808,0.507070124149323,-1.70851790904999,0.699745535850525,-0.0445175133645535,-0.211388438940048,-0.826054513454437,-0.114926412701607,1.21465408802032,-0.0316680446267128,-0.223412349820137,1.49896192550659,-0.87904816865921,-0.445218354463577,-0.160374209284782,-0.0388854183256626,-0.965175271034241,2.48814702033997,-0.777236521244049,-0.629604756832123,0.836884796619415,-1.76783859729767,1.168909907341,-0.493079662322998,-0.705040693283081,-2.0522825717926,-0.450905621051788,0.509899139404297,0.178884759545326,0.832443594932556,-1.30716907978058,-1.75968110561371,-0.184463530778885,1.41081464290619,-0.720200836658478,-1.83511412143707,-0.013101939111948,-0.599301695823669,-1.83526420593262,-0.268403828144073,0.98877090215683,-0.581069946289063,-0.682027697563171,-0.261338353157043,-0.489855617284775,-0.0954546257853508,0.0746653005480766,1.54922115802765,-0.101390086114407,1.22171092033386,-0.950308501720428,1.62605464458466,0.282069087028503,-0.597519814968109,0.0216803941875696,-0.848974943161011,-0.208859175443649,0.349111646413803,0.696725368499756,-0.555752396583557,-1.21286165714264,-0.651729822158813,0.570621848106384,-0.147384867072105,-0.489141672849655,-1.15467524528503,-0.710066020488739,0.537390768527985,-1.52738225460052,-1.03000712394714,0.155168443918228,-0.333180874586105,0.363946855068207,2.23629879951477,0.154171645641327,-1.23240995407104,-0.124643050134182,0.861005783081055,-1.03588819503784,0.131485536694527,0.368401676416397,0.276212781667709,0.438668519258499,-0.48992395401001,0.728130459785461,-1.06445300579071,-0.494816243648529,0.0505737103521824,-0.456287145614624,-0.14622189104557,-0.73167222738266,0.334071725606918,-0.2162966132164,1.98697507381439,-1.60702764987946,0.951887547969818,-0.0920100286602974,-0.37673619389534,1.99038398265839,-2.65949988365173,-0.457965105772018,-0.798311412334442,-1.19498586654663,0.564364671707153,-0.690710067749023,0.536324262619019,-0.792026817798615,-0.333542883396149,-0.665125489234924,0.274419784545898,-1.54962408542633,-0.432465702295303,-0.0279411040246487,1.31703317165375,-0.519928276538849,-1.32512497901917,2.12749600410461,-0.812531173229218,0.0268935151398182,0.0471643209457397,-0.911196172237396,0.606777846813202,-0.132375046610832,0.294152468442917,-0.490146964788437,0.523393273353577,-0.316256701946259,-0.543813765048981,-1.16300344467163,-0.0249424688518047,-0.792870938777924,-0.129781976342201,1.49589657783508,0.130371540784836,2.26654505729675,1.50615191459656,-1.39712166786194,1.08382773399353,-0.949942767620087,0.321780055761337,2.049072265625,-0.997932016849518,-0.687956988811493,-0.596086025238037,-0.826444029808044,-0.128444939851761,0.507074296474457,-0.906176686286926,-0.457912474870682,-0.66897064447403,-1.17942929267883,-1.37137341499329,-1.02961122989655,-0.971709728240967,2.10759854316711,1.24405610561371,-0.758547365665436,0.227182850241661,0.183378711342812,-0.228469133377075,-0.637681066989899,-0.40580952167511,1.06183683872223,0.590650141239166,-1.61088621616364,-1.31303918361664,-0.279485493898392,0.860239088535309,0.527182102203369,1.34458744525909,0.144938960671425,-0.479657024145126,-1.71773314476013,-0.342876046895981,0.768377006053925,0.0241765547543764,-0.234674960374832,-0.653451263904572,0.300103783607483,0.213742211461067,-1.29623973369598,0.334802359342575,-0.18810923397541,-0.944643557071686,-1.11064600944519,-0.579248487949371,-0.938837826251984,0.12089230120182,-0.05145413428545,0.614235818386078,0.00823481101542711,0.0905069932341576,-0.295671880245209,1.38789510726929,0.378028750419617,1.01812255382538,0.752384424209595,0.16682830452919,-1.47900664806366,1.24838328361511,2.08171415328979,-1.76394867897034,-2.65346145629883,0.0832904130220413,1.05413866043091,-0.118458800017834,0.0481197647750378,-1.58054769039154,-0.714732885360718,-0.213244006037712,0.624075591564178,-1.03765535354614,0.150097414851189,-0.191399350762367,-0.76569402217865,-0.911508917808533,0.0216905772686005,-0.0742425322532654,0.923574805259705,0.948801219463348,-1.38503968715668,1.79217767715454,0.322500169277191,-1.52274942398071,0.122612282633781,0.961215972900391,1.34186840057373,-1.55099856853485,-0.199144333600998,1.02979803085327,0.986311733722687,1.87044405937195,-0.0810946822166443,0.572363793849945,-0.64596039056778,-0.761174738407135,-0.708904564380646,0.782123565673828,-1.12644100189209,0.404727101325989,-0.278419315814972,-0.959593653678894,0.556886494159698,0.0644724741578102,-0.292838990688324,0.383270502090454,-0.573232173919678,1.48358571529388,1.24864268302917,2.14770841598511,0.225319758057594,1.46882855892181,-0.368010640144348,1.25048816204071,0.730518877506256,1.28703737258911,1.05495595932007,0.887704730033875,0.495491176843643,-1.63542675971985,1.36795282363892,0.961808800697327,-0.909574866294861,1.57192647457123,-0.742558419704437,2.3132791519165,-0.560089886188507,-0.693305134773254,-1.17418956756592,-1.36144888401031,0.675991237163544,1.65259194374084,0.171946972608566,0.702499151229858,0.836247086524963,1.98407220840454,-2.26019024848938,-0.0299663804471493,1.47870969772339,-0.0160469170659781,-0.485582172870636,0.279654443264008,-1.5192973613739,-2.50070810317993,-0.146826609969139,-1.82131671905518,-0.271293342113495,-0.881010770797729,0.665745198726654,0.840341687202454,0.119819693267345,0.497159481048584,-1.69939947128296,-1.21899104118347,1.26913011074066,-1.29155027866364,0.174925372004509,-0.213553935289383,-0.248616397380829,1.66219627857208,0.816813886165619,0.671084344387054,0.481378644704819,1.6638514995575,-0.244254663586617,-0.122975327074528,0.777127683162689,0.790199518203735,0.169355407357216,0.770476281642914,-0.143243357539177,0.298045665025711,1.11400175094604,0.214542016386986,-0.128895103931427,-2.11025238037109,-0.122880034148693,-0.484402269124985,-0.465715169906616,0.546350419521332,-0.0498807989060879,-0.163789629936218,1.07335436344147,-0.0384825840592384,0.0805413946509361,1.18629586696625,-1.63025259971619,-0.120239332318306,0.339817225933075,-1.19045400619507,1.57800054550171,2.20232653617859,-1.73412895202637,-0.877823173999786,-0.393068253993988,0.877693355083466,0.945009171962738,0.0494152083992958,0.163387924432755,-0.224394053220749,0.66743528842926,-0.541821420192719,-0.216559424996376,0.169038489460945,0.60481733083725,0.583677470684052,-0.595621585845947,0.839005708694458,1.0463695526123,0.428652673959732,1.57227277755737,0.917486667633057,-0.220596507191658,0.018349427729845,1.06812238693237,-1.32884049415588,-0.071250818669796,-1.84736263751984,0.620175957679749,-1.82973957061768,-0.304073482751846,0.44313246011734,-0.579210996627808,0.515660643577576,-0.528710007667542,0.0285798981785774,0.29746288061142,-0.931305527687073,0.0583464726805687,-1.21111476421356,1.20017755031586,0.181526228785515,-1.10122895240784,-1.32684540748596,0.751918971538544,0.47823503613472,1.63986647129059,0.270987123250961,0.285106688737869,0.273493260145187,1.34280669689178,0.24241615831852,-0.582900643348694,1.51246607303619,-0.714095830917358,0.525849223136902,0.473842412233353,-2.19498109817505,1.56593143939972,0.556704819202423,-0.150366470217705,-0.986595988273621,0.418100774288177,1.56966710090637,-0.774087369441986,1.14454710483551,-0.0491358861327171,0.817677795886993,-0.252443552017212,1.17457318305969,-2.98836255073547">
+   </PIN>
+   <PIN pinname="ScaleXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Transform Out" dstnodeid="18" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="21" dstpinname="ScaleXY">
+   </LINK>
+   <NODE systemname="Scale (Transform Vector)" nodename="Scale (Transform Vector)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="5295" top="8265" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="3" values="0.15,0.15,0.15">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Transform Out" dstnodeid="3" dstpinname="View">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9900" top="5610" width="600" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9900" top="5610" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="500">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Spread Count|">
+   </PIN>
+   </NODE>
+   <NODE systemname="DistributionSpread (ML.Statistics Distribution Multivariate)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="DistributionSpread (ML.Statistics Distribution Multivariate)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="9285" top="5970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Generate" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="21" dstpinname="TranslateXY">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Spread Count">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="10500" top="3390" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10500" top="3390" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Means">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="11700" top="3000" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11700" top="3000" width="1230" height="645">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,0.5,0.5,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|1,0,0,1|">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" values="1,0,0,1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Covariance Matrix|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="28" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11835" top="4995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="29" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11805" top="5310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="OnChange" dstnodeid="29" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="30" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11130" top="5010" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="31" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11400" top="5340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="OnChange" dstnodeid="31" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="32" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11580" top="5700" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="32" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="32" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
+   <BOUNDS type="Node" left="11445" top="1380" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11445" top="1380" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="1,0.78,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-0.99">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="0.99">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="11445" top="2415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12375" top="1380" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12375" top="1380" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="1,2,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="27" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="0" systemname="Normal (ML.Statistics Distribution Univariate)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Normal (ML.Statistics Distribution Univariate)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1425" top="3930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Distribution" visible="1">
+   </PIN>
+   <PIN pinname="Standard Deviation" slicecount="1" visible="1" values="0.5">
+   </PIN>
+   <PIN pinname="Mean" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Distribution" dstnodeid="1" dstpinname="Distribution">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Standard Deviation">
+   </LINK>
+   <NODE systemname="Normal (ML.Statistics Distribution Univariate)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Normal (ML.Statistics Distribution Univariate)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="4035" top="4140" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Distribution" visible="1">
+   </PIN>
+   <PIN pinname="Standard Deviation" slicecount="1" visible="1" values="0.2">
+   </PIN>
+   <PIN pinname="Mean" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Standard Deviation">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Distribution" dstnodeid="10" dstpinname="Distribution">
+   </LINK>
+   <NODE systemname="Normal (ML.Statistics Distribution Multivariate)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Normal (ML.Statistics Distribution Multivariate)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="9270" top="4980" width="1710" height="270">
+   </BOUNDS>
+   <PIN pinname="Dimensions" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Distribution" visible="1">
+   </PIN>
+   <PIN pinname="Means" visible="1" slicecount="4" values="1,0,0,1">
+   </PIN>
+   <PIN pinname="Covariance Matrix" visible="1">
+   </PIN>
+   <PIN pinname="Use Mean and Covariance" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Distribution" dstnodeid="25" dstpinname="Distribution">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Covariance Matrix">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Means">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="37" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="795" top="765" width="2130" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="795" top="765" width="4185" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|DistributionSpread Example|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9285" top="4455" width="615" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9285" top="4455" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Dimensions">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Dimensions">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="39" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="825" top="1290" width="7200" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="825" top="1290" width="7200" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Some of the distributions in the ML-Pack can be used to generate data according to the distribution|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="2760" top="7725" width="2670" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="40" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Layer" dstnodeid="40" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="3" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="41" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1395" top="7140" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1395" top="7140" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Switch">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4050" top="3165" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4050" top="3165" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mean">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Mean">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1440" top="2910" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1440" top="2910" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mean">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Mean">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="44" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1245" top="2115" width="6375" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1245" top="2115" width="6390" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Example 1: Two univariate normal distributions with given mean and standard deviation. This is basically the same as using two GaussianSpreads|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9900" top="1515" width="2235" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9900" top="1515" width="1380" height="540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|play around with these values|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="47" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9285" top="7005" width="10920" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9285" top="7005" width="3795" height="2025">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Example 2: &cr;&lf;A multivariate normal distribution has more than one dimension and is therefore defined by a mean vector and a variance-covariance matrix (use the pin &quot;Use Mean and Covariance Matrix&quot; to use the given values).&cr;&lf;&cr;&lf;Be careful: not all values in the covariance matrix are valid (see TTY for exceptions)&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="17" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12675" top="5205" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12675" top="5205" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Generate">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Output" dstnodeid="25" dstpinname="Generate">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Input 3">
+   </LINK>
+   </PATCH>

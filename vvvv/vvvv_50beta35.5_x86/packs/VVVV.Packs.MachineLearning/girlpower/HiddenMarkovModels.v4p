@@ -1,0 +1,433 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha33.8.dtd" >
+   <PATCH nodename="C:\vvvv\git\VVVV.Packs.MachineLearning\girlpower\HiddenMarkovModels.v4p" scrollx="30" scrolly="-720" systemname="HiddenMarkovModels" filename="C:\vvvv\git\VVVV.Packs.MachineLearning\girlpower\HiddenMarkovModels.v4p">
+   <BOUNDS type="Window" left="4575" top="645" width="14715" height="12735">
+   </BOUNDS>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5955" top="3570" width="585" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5955" top="3570" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Number of States|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8055" top="3690" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8055" top="3690" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Train">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5910" top="6150" width="795" height="1290">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5910" top="6150" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Log-Likelyhood">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3900" top="6210" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3900" top="6210" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Average Log-Likelihood|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13260" top="5400" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13260" top="5400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Compute">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="33.8.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6645" top="3885" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6645" top="3885" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Dimensions">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" filename="" nodename="Renderer (EX9)" componentmode="InABox" id="5">
+   <BOUNDS type="Node" left="6105" top="8040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6105" top="8040" width="4170" height="3645">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14970" top="8895" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Trainer (ML.Learning HMM)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Trainer (ML.Learning HMM)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3915" top="5145" width="4185" height="270">
+   </BOUNDS>
+   <PIN pinname="Output Model" visible="1">
+   </PIN>
+   <PIN pinname="Observation Sequence" visible="1">
+   </PIN>
+   <PIN pinname="Observation Sequence Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Observation Length" visible="1">
+   </PIN>
+   <PIN pinname="Topology" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Train" visible="1">
+   </PIN>
+   <PIN pinname="Likelyhood" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Distribution" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Model" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Learning Algorithm" slicecount="1" visible="1" values="Viterbi">
+   </PIN>
+   <PIN pinname="Iterations" slicecount="1" values="1000">
+   </PIN>
+   <PIN pinname="Average Log-Likelihood" visible="1">
+   </PIN>
+   <PIN pinname="Log-Likelyhood" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Train">
+   </LINK>
+   <NODE systemname="Forward (ML.Learning HMM Topology)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Forward (ML.Learning HMM Topology)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="5940" top="4260" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Number of States" visible="1">
+   </PIN>
+   <PIN pinname="Topology" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Number of States">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Topology" dstnodeid="0" dstpinname="Topology">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10920" top="6795" width="795" height="2040">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10920" top="6795" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Log-Likelyhood">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Average Log-Likelihood" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Log-Likelyhood" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="39" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="7365" top="4665" width="1320" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7365" top="4665" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="BaumWelch">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Learning Algorithm|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output Enum" dstnodeid="0" dstpinname="Learning Algorithm">
+   </LINK>
+   <PACK Name="Image" Version="0.2.0">
+   </PACK>
+   <NODE systemname="Draw" filename="subpatches\Draw.v4p" componentmode="Hidden" id="41" nodename="subpatches\Draw.v4p">
+   <BOUNDS type="Node" left="4665" top="2310" width="8535" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4665" top="2310" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3630" top="2460" width="11775" height="10095">
+   </BOUNDS>
+   <PIN pinname="Output A" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size A" visible="1">
+   </PIN>
+   <PIN pinname="Output Queue Size A" visible="1">
+   </PIN>
+   <PIN pinname="Output B" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size B" visible="1">
+   </PIN>
+   <PIN pinname="Output Queue Size B" visible="1">
+   </PIN>
+   <PIN pinname="Remove A" visible="1">
+   </PIN>
+   <PIN pinname="Remove B" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="Output Bin Size A" dstnodeid="0" dstpinname="Vector Size" linkstyle="Bezier">
+   <LINKPOINT x="6025" y="3863">
+   </LINKPOINT>
+   <LINKPOINT x="4700" y="3863">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output Queue Size A" dstnodeid="0" dstpinname="Bin Size" linkstyle="Bezier">
+   <LINKPOINT x="7420" y="3855">
+   </LINKPOINT>
+   <LINKPOINT x="5405" y="3855">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5100" top="1620" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5100" top="1620" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Remove last drawn training sample|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Remove A">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="11940" top="1545" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11940" top="1545" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Remove last drawn test sample|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Remove B">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Layer" dstnodeid="5" dstpinname="Layers" linkstyle="Bezier">
+   <LINKPOINT x="12695" y="5545">
+   </LINKPOINT>
+   <LINKPOINT x="6595" y="5060">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output A" dstnodeid="0" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="4630" y="3863">
+   </LINKPOINT>
+   <LINKPOINT x="3995" y="3863">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="10500" top="9660" width="1470" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10500" top="9660" width="1485" height="1740">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Left Mousebutton:&cr;&lf;Draw training data&cr;&lf;&cr;&lf;Right Mousbutton:&cr;&lf;Draw test data&cr;&lf;&cr;&lf;Middle Click:&cr;&lf;Delete all|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Normal (ML.Statistics Distribution Multivariate)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Normal (ML.Statistics Distribution Multivariate)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="6645" top="4275" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Dimensions" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Distribution" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Dimensions">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Distribution" dstnodeid="0" dstpinname="Distribution">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="47" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="495" top="405" width="2325" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="495" top="405" width="4935" height="495">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Hidden Markov Model Learning|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="48" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="465" top="1230" width="4620" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="465" top="1230" width="3255" height="3990">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Hidden Markov Models can be used to model sequences of data. &cr;&lf;&cr;&lf;Basically it tries to learn from given examples of one and the same class, what could be the process behind these examples that generates them. &cr;&lf;&cr;&lf;For this it uses a model of connected states (similar to a state machine). It tries to figure out from the data what these states are and with what probability a state changes to another.&cr;&lf;&cr;&lf;When a model has been found it can be used for any sequence to compute the probability (log-likeliyhood) that this sequence was created by this model.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Evaluator (ML.Learning HMM)" filename="%VVVV%\packs\VVVV.Packs.MachineLearning\nodes\plugins\VVVV.Packs.MachineLearning.dll" nodename="Evaluator (ML.Learning HMM)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="10905" top="6180" width="2430" height="270">
+   </BOUNDS>
+   <PIN pinname="Input Model" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Observation Sequence" visible="1" slicecount="114" values="0.10828025477707,-0.473684210526316,0.10828025477707,-0.473684210526316,0.10828025477707,-0.473684210526316,0.10828025477707,-0.473684210526316,0.10828025477707,-0.473684210526316,0.10828025477707,-0.460526315789474,0.10828025477707,-0.447368421052632,0.10828025477707,-0.434210526315789,0.10828025477707,-0.407894736842105,0.10828025477707,-0.394736842105263,0.10828025477707,-0.381578947368421,0.10828025477707,-0.355263157894737,0.10828025477707,-0.342105263157895,0.10828025477707,-0.328947368421053,0.10828025477707,-0.315789473684211,0.10828025477707,-0.289473684210526,0.10828025477707,-0.276315789473684,0.10828025477707,-0.263157894736842,0.10828025477707,-0.25,0.10828025477707,-0.236842105263158,0.10828025477707,-0.210526315789474,0.10828025477707,-0.171052631578947,0.10828025477707,-0.144736842105263,0.10828025477707,-0.0789473684210527,0.10828025477707,-0.013157894736842,0.0955414012738853,0.0657894736842105,0.0828025477707006,0.144736842105263,0.0828025477707006,0.223684210526316,0.0828025477707006,0.276315789473684,0.0700636942675159,0.328947368421053,0.0573248407643312,0.394736842105263,0.0445859872611465,0.447368421052632,0.0318471337579618,0.5,0.0191082802547771,0.552631578947368,0.00636942675159236,0.565789473684211,-0.00636942675159236,0.565789473684211,-0.00636942675159236,0.565789473684211,-0.00636942675159236,0.565789473684211,-0.00636942675159236,0.565789473684211,-0.00636942675159236,0.552631578947368,-0.0191082802547771,0.552631578947368,-0.0318471337579618,0.539473684210526,-0.0573248407643312,0.5,-0.0828025477707006,0.460526315789474,-0.10828025477707,0.407894736842105,-0.184713375796178,0.315789473684211,-0.235668789808917,0.197368421052632,-0.32484076433121,-0.013157894736842,-0.388535031847134,-0.131578947368421,-0.426751592356688,-0.197368421052632,-0.464968152866242,-0.236842105263158,-0.464968152866242,-0.263157894736842,-0.464968152866242,-0.263157894736842,-0.464968152866242,-0.263157894736842,-0.464968152866242,-0.263157894736842,-0.464968152866242,-0.263157894736842,-0.464968152866242,-0.263157894736842">
+   </PIN>
+   <PIN pinname="Observation Sequence Bin Size" visible="1" slicecount="57" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
+   </PIN>
+   <PIN pinname="Observation Length" visible="1" slicecount="1" values="57">
+   </PIN>
+   <PIN pinname="Test" visible="1">
+   </PIN>
+   <PIN pinname="LikelyhoodTest" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Likelyhood" visible="1">
+   </PIN>
+   <PIN pinname="Model" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Log-Likelyhood" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1">
+   </PIN>
+   <PIN pinname="Compute" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Model" dstnodeid="1" dstpinname="Model">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Log-Likelyhood" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output Bin Size B" dstnodeid="1" dstpinname="Vector Size" linkstyle="Bezier">
+   <LINKPOINT x="10440" y="4423">
+   </LINKPOINT>
+   <LINKPOINT x="12030" y="4338">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output Queue Size B" dstnodeid="1" dstpinname="Bin Size" linkstyle="Bezier">
+   <LINKPOINT x="11835" y="4423">
+   </LINKPOINT>
+   <LINKPOINT x="12630" y="4338">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output B" dstnodeid="1" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="8570" y="4365">
+   </LINKPOINT>
+   <LINKPOINT x="11875" y="4365">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Compute">
+   </LINK>
+   </PATCH>
