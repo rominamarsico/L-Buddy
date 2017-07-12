@@ -31,7 +31,7 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="-0.46">
+   <PIN pinname="TranslateY" slicecount="1" values="0.52">
    </PIN>
    <PIN pinname="TranslateX" slicecount="1" values="0.2">
    </PIN>
@@ -49,7 +49,7 @@
    </PIN>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="2" visible="1">
+   <PIN pinname="Index" slicecount="1" visible="1" values="2">
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="5">
@@ -315,7 +315,7 @@
    </PIN>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="1" visible="1">
+   <PIN pinname="Index" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="29">
@@ -578,7 +578,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="3990" top="3150" width="13665" height="11085">
+   <BOUNDS type="Window" left="2172" top="1704" width="13656" height="11076">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

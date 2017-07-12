@@ -2,12 +2,12 @@
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Renderer-Kinect.v4p" systemname="Renderer-Kinect" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Renderer-Kinect.v4p">
    <BOUNDS type="Window" left="5085" top="6015" width="7665" height="4950">
    </BOUNDS>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="5">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="5">
    <BOUNDS type="Node" left="1065" top="3525" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1065" top="3525" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="21345" top="255" width="5745" height="4560">
+   <BOUNDS type="Window" left="10932" top="648" width="5736" height="4560">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Kinect">
    </PIN>
@@ -47,7 +47,7 @@
    <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="5" dstpinname="Layers">
    </LINK>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="2760" top="3525" width="100" height="100">
+   <BOUNDS type="Node" left="3000" top="3525" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>

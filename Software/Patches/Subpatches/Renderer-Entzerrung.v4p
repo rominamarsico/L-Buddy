@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Renderer-Entzerrung.v4p" scrollx="0" scrolly="0" systemname="Renderer-Entzerrung" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Renderer-Entzerrung.v4p">
-   <BOUNDS type="Window" left="8496" top="2376" width="7632" height="8316">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Renderer-Entzerrung.v4p" scrollx="0" scrolly="-12" systemname="Renderer-Entzerrung" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Renderer-Entzerrung.v4p">
+   <BOUNDS type="Window" left="2256" top="1476" width="7632" height="8316">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="41" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="642" top="354" width="405" height="405">
@@ -200,8 +200,6 @@
    </NODE>
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Grid ResolutionXY">
    </LINK>
-   <LINK srcnodeid="34" srcpinname="Control PointsXYZ" dstnodeid="33" dstpinname="Control XYZ">
-   </LINK>
    <LINK srcnodeid="34" srcpinname="Control Point ResolutionXY" dstnodeid="33" dstpinname="Control Point ResolutionXY">
    </LINK>
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="32">
@@ -331,7 +329,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2430" top="6300" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="16428" top="5616" width="6240" height="5076">
+   <BOUNDS type="Window" left="16500" top="5484" width="6240" height="5076">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -388,7 +386,7 @@
    <LINKPOINT x="3975" y="3960">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="15">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="15">
    <BOUNDS type="Node" left="465" top="6300" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="465" top="6300" width="2400" height="1800">
@@ -404,6 +402,16 @@
    <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Is Fullscreen" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="13">
@@ -492,10 +500,28 @@
    </LINK>
    <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="15" dstpinname="Layers">
-   </LINK>
    <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Mesh" dstnodeid="10" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="15" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="68">
+   <BOUNDS type="Box" left="1884" top="2592" width="792" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1884" top="2592" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="48" visible="1" values="-0.340000114440918,0.279999971389771,-0.189999982714653,-0.0700000166893005,0.419999957084656,-0.0399999991059303,-0.0200000071525573,0.490000009536743,-0.0699999928474426,-0.040000005364418,0.539999961853027,-0.0199999995529652,0.00999998927116398,0.5,7.45058059692383E-009,0.0500000083446502,0.479999959468842,-0.0400000028312206,0.0800000071525574,0.519999980926514,-0.0899999961256981,0.350000104904175,0.339999973773956,-0.170000001788139,-0.250000081062317,-0.549999952316284,-0.569999992847443,0.0700000286102295,-0.96999990940094,-0.469999998807907,0.0100000238418579,0.130000025033951,0.0899999961256981,-0.170000015497208,-0.0299999713897705,-0.0299999937415123,0.0599999862909317,0.359999999403954,0.269999980926514,-0.0300000047683716,-0.169999957084656,-0.0599999986588955,0.0499999761581421,0.0300000309944153,0.100000001490116,0.219999990463257,-0.409999966621399,-0.860000014305115">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Control XYZ">
    </LINK>
    </PATCH>

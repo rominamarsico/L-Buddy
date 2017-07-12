@@ -37,6 +37,8 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
+   <PIN pinname="Y" slicecount="1" values="0.45">
+   </PIN>
    </NODE>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="4059" top="1542" width="100" height="100">
@@ -143,7 +145,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="-0.55,0.55">
+   <PIN pinname="Y Input Value" slicecount="2" values="-0.35,0.43">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>

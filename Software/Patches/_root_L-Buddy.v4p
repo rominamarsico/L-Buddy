@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\_root_L-Buddy.v4p" systemname="L Buddy" filename="C:\Users\Romina\Documents\Hochschule\6. Semester\_P6\L Buddy.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1224" top="132" width="12396" height="12012">
+   <BOUNDS type="Window" left="576" top="192" width="12360" height="12012">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -27,7 +27,7 @@
    </PIN>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="7050" top="5490" width="14835" height="10110">
+   <BOUNDS type="Window" left="0" top="1416" width="14832" height="10104">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -357,7 +357,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7275" top="3555" width="9660" height="7416">
    </BOUNDS>
-   <BOUNDS type="Window" left="12870" top="5745" width="11355" height="7755">
+   <BOUNDS type="Window" left="1344" top="3492" width="11352" height="7752">
    </BOUNDS>
    <PIN pinname="Layer-Kinect" visible="1">
    </PIN>
@@ -467,7 +467,7 @@
    <NODE systemname="Renderer-Entzerrung" filename="Subpatches\Renderer-Entzerrung.v4p" nodename="Subpatches\Renderer-Entzerrung.v4p" componentmode="Hidden" id="201">
    <BOUNDS type="Node" left="4365" top="12345" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="8496" top="2376" width="7632" height="8316">
+   <BOUNDS type="Window" left="2256" top="1476" width="7632" height="8316">
    </BOUNDS>
    <PIN pinname="Layer 2 Pass" visible="1">
    </PIN>
@@ -597,14 +597,14 @@
    </PIN>
    <PIN pinname="Setup Connection" visible="1">
    </PIN>
+   <PIN pinname="Message 2" visible="1" slicecount="1" values="1.0000">
+   </PIN>
    </NODE>
    <LINK srcnodeid="172" srcpinname="MQTT-Send" dstnodeid="215" dstpinname="Do send" linkstyle="VHV">
    <LINKPOINT x="4740" y="6390">
    </LINKPOINT>
    <LINKPOINT x="10215" y="6390">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="115" srcpinname="MQTT-Index" dstnodeid="215" dstpinname="Message 2">
    </LINK>
    <LINK srcnodeid="172" srcpinname="ShowTopic" dstnodeid="215" dstpinname="Switch-Message" linkstyle="VHV">
    <LINKPOINT x="5010" y="6570">
@@ -713,7 +713,7 @@
    <NODE id="244" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
    <BOUNDS type="Node" left="8136" top="1080" width="1512" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="8136" top="1080" width="3675" height="1950">
+   <BOUNDS type="Box" left="8136" top="1080" width="3672" height="1956">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Gesten:&cr;&lf;&cr;&lf;F5 - zurück&cr;&lf;F6 - weiter&cr;&lf;|">
    </PIN>
@@ -754,8 +754,6 @@
    </LINK>
    <LINK srcnodeid="193" srcpinname="Layer-Skeleton" dstnodeid="203" dstpinname="Layer 2 Kinect">
    </LINK>
-   <LINK srcnodeid="213" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 9">
-   </LINK>
    <LINK srcnodeid="172" srcpinname="Start" dstnodeid="239" dstpinname="F2">
    </LINK>
    <NODE systemname="Space" filename="Space.v4p" nodename="Space.v4p" componentmode="Hidden" id="269">
@@ -777,11 +775,9 @@
    </PIN>
    <PIN pinname="0 = Mars, 1 = Moon" slicecount="1" visible="1" values="1">
    </PIN>
+   <PIN pinname="Directory" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="239" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 8">
-   </LINK>
-   <LINK srcnodeid="202" srcpinname="Layer-Grid" dstnodeid="125" dstpinname="Layer 7">
-   </LINK>
    <LINK srcnodeid="115" srcpinname="Layer-Space" dstnodeid="125" dstpinname="Layer 6">
    </LINK>
    <LINK srcnodeid="127" srcpinname="Layer-Karten" dstnodeid="125" dstpinname="Layer 5">
@@ -803,5 +799,83 @@
    <LINK srcnodeid="119" srcpinname="Karten-Nummer" dstnodeid="269" dstpinname="0 = Mars, 1 = Moon">
    </LINK>
    <LINK srcnodeid="172" srcpinname="ShowTopic" dstnodeid="269" dstpinname="0 = Full, 1 = Zoom">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 7">
+   </LINK>
+   <LINK srcnodeid="213" srcpinname="Layer" dstnodeid="125" dstpinname="Layer 8">
+   </LINK>
+   <LINK srcnodeid="202" srcpinname="Layer-Grid" dstnodeid="125" dstpinname="Layer 9">
+   </LINK>
+   <NODE systemname="Preloader (EX9.Texture)" filename="%VVVV%\lib\nodes\modules\EX9.Texture\Preloader (EX9.Texture).v4p" nodename="Preloader (EX9.Texture)" componentmode="Hidden" id="270">
+   <BOUNDS type="Node" left="1860" top="5940" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="File Mask" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Directory" visible="1">
+   </PIN>
+   <PIN pinname="Load in Background" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="All Up and Running" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="270" srcpinname="Layer Out" dstnodeid="125" dstpinname="Layer 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="272">
+   <BOUNDS type="Box" left="2040" top="5484" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2040" top="5484" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="*.*">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|File Mask|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="272" srcpinname="Output String" dstnodeid="270" dstpinname="File Mask">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="273">
+   <BOUNDS type="Box" left="1524" top="5112" width="1716" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1524" top="5112" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Assets\Space-DDS">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="273" srcpinname="Output String" dstnodeid="270" dstpinname="Directory">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="274">
+   <BOUNDS type="Box" left="2424" top="6516" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2424" top="6516" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="270" srcpinname="All Up and Running" dstnodeid="274" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="273" srcpinname="Output String" dstnodeid="269" dstpinname="Directory">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="MQTT-Index" dstnodeid="215" dstpinname="Message 2">
    </LINK>
    </PATCH>

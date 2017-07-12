@@ -10,7 +10,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="7050" top="5490" width="14835" height="10110">
+   <BOUNDS type="Window" left="0" top="1416" width="14832" height="10104">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -35,7 +35,7 @@
    </PIN>
    </NODE>
    <NODE id="56" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input" visible="1" slicecount="2" pintype="Input" values="0,3">
+   <PIN pinname="Input" visible="1" slicecount="2" pintype="Input" values="0,1">
    </PIN>
    <BOUNDS type="Node" left="795" top="3945" width="100" height="100">
    </BOUNDS>
@@ -107,9 +107,9 @@
    <NODE id="25" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="795" top="3015" width="840" height="450">
+   <BOUNDS type="Box" left="807" top="1947" width="840" height="450">
    </BOUNDS>
-   <BOUNDS type="Node" left="795" top="3015" width="0" height="0">
+   <BOUNDS type="Node" left="807" top="1947" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1,1">
    </PIN>
@@ -124,8 +124,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="165">
    <BOUNDS type="Node" left="795" top="5460" width="204" height="240">
    </BOUNDS>
@@ -515,7 +513,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10155" top="6585" width="15684" height="12952">
    </BOUNDS>
-   <BOUNDS type="Window" left="16260" top="1545" width="7980" height="12435">
+   <BOUNDS type="Window" left="3264" top="948" width="7980" height="12432">
    </BOUNDS>
    <PIN pinname="PointsXY" visible="1">
    </PIN>
@@ -539,7 +537,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8160" top="6585" width="15294" height="13824">
    </BOUNDS>
-   <BOUNDS type="Window" left="360" top="1065" width="15135" height="13815">
+   <BOUNDS type="Window" left="360" top="1056" width="15012" height="13104">
    </BOUNDS>
    <PIN pinname="PointsXY" visible="1">
    </PIN>
@@ -561,7 +559,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12060" top="6585" width="12280" height="11568">
    </BOUNDS>
-   <BOUNDS type="Window" left="3990" top="3150" width="13665" height="11085">
+   <BOUNDS type="Window" left="2172" top="1704" width="13656" height="11076">
    </BOUNDS>
    <PIN pinname="PointsXY" visible="1">
    </PIN>
@@ -639,5 +637,23 @@
    <LINK srcnodeid="482" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="498" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="502">
+   <BOUNDS type="Node" left="780" top="2916" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="780" top="2916" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="2,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="502" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Input">
    </LINK>
    </PATCH>

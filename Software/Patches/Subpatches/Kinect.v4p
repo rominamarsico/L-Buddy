@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="570" top="1476">
    </BOUNDS>
-   <PIN pinname="Motor Angle" visible="1" slicecount="1" values="0.5">
+   <PIN pinname="Motor Angle" visible="1" slicecount="1" values="0.8">
    </PIN>
    <PIN pinname="Enable Skeleton" visible="1">
    </PIN>
@@ -274,7 +274,7 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="XYZ">
    </LINK>
-   <BOUNDS type="Window" left="12870" top="5745" width="11355" height="7755">
+   <BOUNDS type="Window" left="1344" top="3492" width="11352" height="7752">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="16" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="585" top="3540" width="795" height="240">

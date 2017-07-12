@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Space.v4p" systemname="Space" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Space.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Space.v4p" systemname="Space" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Space.v4p" scrollx="0" scrolly="672">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="32" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1050" top="375" width="1305" height="270">
    </BOUNDS>
@@ -609,6 +609,8 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Directory">
+   </PIN>
    </NODE>
    <LINK srcnodeid="75" srcpinname="Output String" dstnodeid="71" dstpinname="Directory">
    </LINK>
@@ -703,92 +705,6 @@
    <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="81" dstpinname="Input 2">
-   </LINK>
-   <NODE systemname="Preloader (EX9.Texture)" filename="%VVVV%\lib\nodes\modules\EX9.Texture\Preloader (EX9.Texture).v4p" nodename="Preloader (EX9.Texture)" componentmode="Hidden" id="83">
-   <BOUNDS type="Node" left="2895" top="4770" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   <PIN pinname="File Mask" visible="1">
-   </PIN>
-   <PIN pinname="Directory" visible="1">
-   </PIN>
-   <PIN pinname="Preload to Video Memory" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Reload" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Load in Background" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Error" visible="1">
-   </PIN>
-   <PIN pinname="Progress" visible="1">
-   </PIN>
-   <PIN pinname="All Up and Running" visible="1">
-   </PIN>
-   <PIN pinname="Texture Type" slicecount="1" values="Texture">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="83" srcpinname="Layer Out" dstnodeid="73" dstpinname="Layer 1">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="84">
-   <BOUNDS type="Box" left="3060" top="4440" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3060" top="4440" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="*.*">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="*.*">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="*.*">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="84" srcpinname="Output String" dstnodeid="83" dstpinname="File Mask">
-   </LINK>
-   <LINK srcnodeid="75" srcpinname="Output String" dstnodeid="83" dstpinname="Directory">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="85">
-   <BOUNDS type="Box" left="2085" top="7935" width="2070" height="930">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2085" top="7935" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="83" srcpinname="Error" dstnodeid="85" dstpinname="Input String">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="86">
-   <BOUNDS type="Box" left="3570" top="7560" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3570" top="7560" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="83" srcpinname="Progress" dstnodeid="86" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="87">
-   <BOUNDS type="Box" left="3210" top="7125" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3210" top="7125" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="83" srcpinname="All Up and Running" dstnodeid="87" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="88">
    <BOUNDS type="Node" left="7155" top="8025" width="1020" height="270">

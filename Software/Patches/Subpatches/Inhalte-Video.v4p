@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Inhalte-Video.v4p" scrollx="0" scrolly="0" systemname="Inhalte-Video" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Inhalte-Video.v4p">
+   <PATCH nodename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Inhalte-Video.v4p" scrollx="0" scrolly="4092" systemname="Inhalte-Video" filename="C:\Users\Romina\Documents\GitHub\L-Buddy\Software\Patches\Subpatches\Inhalte-Video.v4p">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="477" top="465" width="1305" height="270">
    </BOUNDS>
@@ -800,7 +800,7 @@
    </LINK>
    <LINK srcnodeid="31" srcpinname="Down Edge" dstnodeid="30" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="360" top="1065" width="15135" height="13815">
+   <BOUNDS type="Window" left="360" top="1056" width="15012" height="13104">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="67">
    <BOUNDS type="Node" left="12060" top="4890" width="100" height="100">
@@ -975,7 +975,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="91">
-   <BOUNDS type="Box" left="9345" top="3060" width="1515" height="240">
+   <BOUNDS type="Box" left="9345" top="3060" width="1704" height="276">
    </BOUNDS>
    <BOUNDS type="Node" left="9345" top="3060" width="0" height="0">
    </BOUNDS>
@@ -1197,7 +1197,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="0.43,0">
+   <PIN pinname="Y Input Value" slicecount="2" values="0.43,0.17">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -1231,7 +1231,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="0.53,-0.34">
+   <PIN pinname="Y Input Value" slicecount="2" values="0.53,0.51">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -1593,11 +1593,11 @@
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0.86">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0.65">
    </PIN>
    <PIN pinname="Input 4" visible="1" slicecount="1" values="0">
    </PIN>

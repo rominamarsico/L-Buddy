@@ -19,9 +19,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="10" values="1,1,1,0,0,0,0,0,0,0">
+   <PIN pinname="X Input Value" slicecount="10" values="1,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="1,1,1,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" slicecount="10" values="1,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="5">
